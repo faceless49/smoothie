@@ -1,90 +1,91 @@
 * {
-	font-family: 'Muli', sans-serif;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  font-family: "Muli", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-	min-height: 1080px;
-	background: url("../images/header-bg.png") center center/cover no-repeat;
+  min-height: 1080px;
+  background: url("../images/header-bg.png") center center/cover no-repeat;
 }
 
 .header-top {
-	display: flex;
-	justify-content: space-between;
-	align-content: center;
-	padding: 73px 100px 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 73px 100px 0 100px;
 }
 
 .navigation {
-	min-width: 540px;
+  min-width: 540px;
 }
 .menu {
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
+
 .menu .menu__link {
-	text-decoration: none;
-	color: #;
-	text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 .header .logo {
-	min-width: 210px;
+  min-width: 210px;
 }
 
 .personal__list {
-	min-width: 175px;
-	padding: 0;
+  min-width: 175px;
+  padding: 0;
 }
 .divider {
-	width: 75px;
-	height: 2px;
-	background-color: rgb(255, 213, 119);
-
+  margin: 15px 41px 0 33px;
+  width: 47px;
+  height: 2px;
+  background-color: #ffd68f;
 }
 .socials {
-	display: flex;
-	justify-content: space-between;
-	width: 125px;
+  display: flex;
+  justify-content: space-between;
+  width: 125px;
 }
 
 .wrapper {
-	display: flex;
-	justify-content: space-between;
-	align-content: center;
+  display: flex; 
+  justify-content: space-between; 
+  align-content: center;
 }
 
 .socials__item {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 4px ;
-	width: 32px;
-	height: 32px;
-	background-color: white;
-	border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px;
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  border-radius: 100%;
 }
 .header__socials {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .header-bottom__btn {
-	position: relative;
-	display: block;
-	margin: 110px auto;
-	width: 280px;
-	height: 70px;
-	color: ;
+  position: relative;
+  display: block;
+  margin: 110px auto;
+  width: 280px;
+  height: 70px;
+  color: ;
 }
 .header-bottom__link {
-	text-decoration: none;
+  text-decoration: none;
 }
 .btn-icon {
-	position: absolute;
-	left: 10px;
-	top: 50%;
-	font-size: 30px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  font-size: 30px;
 }
