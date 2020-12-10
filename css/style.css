@@ -1,83 +1,103 @@
 * {
   font-family: "Muli", sans-serif;
-  box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-header {
+.header {
+  border: 6px solid #e04722;
   min-height: 1080px;
   background: url("../images/header-bg.png") center center/cover no-repeat;
 }
 
-.header-top {
+.header__top-inner {
   display: flex;
-  justify-content: space-between;
-  align-content: center;
-  padding: 73px 100px 0 100px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 70px 0 0 0;
+  border: 3px solid #ae3e76;
 }
 
-.navigation {
-  min-width: 540px;
-}
 .menu {
+  border: 3px solid #224ee0;
+}
+.menu__list {
+  width: 540px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   list-style: none;
 }
-
-.menu .menu__link {
-  text-decoration: none;
-  color: #ffffff;
-  text-transform: uppercase;
+.menu__list .menu__link {
+    text-decoration: none;
 }
-.header .logo {
+
+.logo {
   min-width: 210px;
+  border: 3px solid #224ee0;
 }
 
 .personal__list {
-  min-width: 175px;
-  padding: 0;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
+
 .divider {
-  margin: 15px 41px 0 33px;
+  margin: 0 40px;
   width: 47px;
   height: 2px;
   background-color: #ffd68f;
 }
+
 .socials {
+  width: 125px;
   display: flex;
   justify-content: space-between;
-  width: 125px;
+  align-items: center;
 }
 
-.wrapper {
-  display: flex; 
-  justify-content: space-between; 
-  align-content: center;
-}
-
-.socials__item {
+.header__socials .socials__item {
+  width: 32px;
+  height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 4px;
-  width: 32px;
-  height: 32px;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 100%;
 }
-.header__socials {
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid #224ee0;
+}
+
+.header__bottom-inner {
+  margin-top: 110px;
   display: flex;
   justify-content: center;
+  border: 3px solid #ae3e76;
+}
+
+.btn {
+  width: 280px;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50px;
+  color: #ffffff;
+  border: none;
+}
+.header__btn--green-bg {
+  background-color: #0aa466;
 }
 
 .header-bottom__btn {
-  position: relative;
-  display: block;
-  margin: 110px auto;
-  width: 280px;
-  height: 70px;
+
 }
 .header-bottom__link {
   text-decoration: none;
@@ -88,3 +108,4 @@ header {
   top: 50%;
   font-size: 30px;
 }
+*/
