@@ -1,90 +1,236 @@
 * {
   font-family: "Muli", sans-serif;
-  box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-header {
+.header {
+  border: 6px solid #e04722;
   min-height: 1080px;
   background: url("../images/header-bg.png") center center/cover no-repeat;
 }
 
-.header-top {
+.header__top-inner {
   display: flex;
   justify-content: space-between;
-  align-content: center;
-  padding: 73px 100px 0 100px;
+  align-items: center;
+  padding: 70px 100px 0 100px;
+  border: 3px solid #ae3e76;
 }
 
-.navigation {
-  min-width: 540px;
-}
 .menu {
+  border: 3px solid #224ee0;
+}
+.menu__list {
+  width: 540px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   list-style: none;
 }
-
-.menu .menu__link {
+.menu__list .menu__link {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
 }
-.header .logo {
-  min-width: 210px;
+
+.logo {
+  width: 211px;
+  height: 70px;
+  border: 3px solid #224ee0;
 }
 
 .personal__list {
-  min-width: 175px;
-  padding: 0;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
+
 .divider {
-  margin: 15px 41px 0 33px;
+  margin: 0 40px;
   width: 47px;
   height: 2px;
   background-color: #ffd68f;
 }
+
 .socials {
+  width: 125px;
   display: flex;
   justify-content: space-between;
-  width: 125px;
+  align-items: center;
 }
 
-.wrapper {
-  display: flex; 
-  justify-content: space-between; 
-  align-content: center;
-}
-
-.socials__item {
+.header__socials .socials__item {
+  width: 32px;
+  height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 4px;
-  width: 32px;
-  height: 32px;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 100%;
 }
-.header__socials {
+.container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid #224ee0;
 }
 
-.header-bottom__btn {
-  position: relative;
-  display: block;
-  margin: 110px auto;
+.header__bottom-inner {
+  margin-top: 110px;
+  display: flex;
+  justify-content: center;
+  border: 3px solid #ae3e76;
+}
+
+.btn {
   width: 280px;
   height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50px;
+  font-size: 24px;
+  font-weight: 400;
+  background-color: #0aa466;
+  color: #ffffff;
+  border: none;
 }
-.header-bottom__link {
-  text-decoration: none;
+
+.smoothies {
+  border: 3px solid #224ee0;
 }
-.btn-icon {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  font-size: 30px;
+.smoothies__inner {
+  max-height: 870px;
+  padding: 100px 0;
+  text-align: center;
+  border: 3px solid #ae3e76;
+}
+.smoothies__text {
+  max-width: 915px;
+  margin: 50px auto;
+}
+.features {
+  max-height: 380px;
+  max-width: 1010px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features__item {
+  width: 240px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #efeee9;
+  bordernone: ; /*@TODO: псевдодочкам сделать бордеры;*/
+}
+.features__descr {
+  margin-top: 20px;
+}
+.about__inner {
+  max-height: 800px;
+  display: flex;
+  justify-content: space-around;
+  background: url("../images/holder.png") center center/cover no-repeat;
+  align-items: center;
+  border: 3px solid #ae3e76;
+}
+.title .about__title {
+  font-weight: 800;
+  font-size: 55px;
+  color: #ffffff;
+}
+.advantages {
+  border: 3px solid #224ee0;
+}
+.welcome-img {
+  border: 3px solid #224ee0;
+}
+.advantages__list {
+  list-style: none;
+  border: 3px solid red;
+}
+.advantages__list li:before {
+  content: "";
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  background-size: 18px;
+  background-image: url(../icons/1.svg);
+  background-repeat: no-repeat;
+  margin-right: 20px;
+  line-height: 100%;
+}
+.about__title {
+  border: 3px solid red;
+}
+.about__btn--yellow {
+  width: 380px;
+  height: 60px;
+  font-size: 21px;
+  font-weight: 800;
+  border: 3px solid #f8b231;
+  background-color: transparent;
+}
+
+.products {
+  height: 720px;
+  display: flex;
+  text-align: center;
+  color: #ffffff;
+  border: 3px solid #ae3e76;
+}
+.products__descr {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 34px;
+  border: 3px solid red;
+}
+.products__subtitle {
+  font-size: 21px;
+  font-weight: 400;
+  font-style: italic;
+  margin: 16px 0 64px 0;
+  border: 3px solid red;
+}
+.products__item {
+  padding: 125px 0 80px 0;
+  width: 25%;
+  border: 3px solid #224ee0;
+}
+.products__item--chocolate {
+  background: url(../images/darkchocolate-holder.png) center center/cover
+    no-repeat;
+}
+.products__item--vegan {
+  background: url(../images/veganlett-holder.png) center center/cover no-repeat;
+}
+.products__item--lemon {
+  background: url(../images/lemongin-holder.png) center center/cover no-repeat;
+}
+.products__item--turmeric {
+  background: url(../images/turmeric-holder.png) center center/cover no-repeat;
+}
+.products__btn--white {
+  width: 204px;
+  height: 60px;
+  margin: 0 auto;
+  border: 3px solid #ffffff;
+  text-align: center;
+  background-color: transparent;
+}
+.story__btn--green-bg {
+  font-size: 21px;
+}
+.story {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
