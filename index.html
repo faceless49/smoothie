@@ -12,71 +12,72 @@
   <body>
     <header class="header">
       <div class="header-top">
-        <nav>
-          <div class="navigation">
-            <ul class="menu">
-              <li class="menu__item">
-                <a class="menu__link" href="#">home</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">shop</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">story</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">about</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">blog</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">testimonials</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <div class="header__top-inner">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="#">home</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">shop</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">story</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">about</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">blog</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">testimonials</a>
+                </li>
+              </ul>
+            </nav>
+
         <div class="logo">
-          <a class="" href="#"><img src="images/logo.png" alt="" /></a>
+          <a class="logo__link" href="#"><img class="logo__img" src="images/logo.png" alt="Логотип" /></a>
         </div>
-        <div class="wrapper">
-          <div class="personal">
-            <ul class="menu personal__list">
-              <li>
-                <a href="#"
-                  ><img src="icons/navbar/Search-icon.svg" alt=""
+        <div class="container">
+         <div class="personal">
+            <ul class="personal__list">
+              <li class="personal__list-item">
+                <a href="#" class="personal__icon" 
+                  ><img class="personal__icon-search" src="icons/navbar/Search-icon.svg" alt=""
                 /></a>
               </li>
-              <li>
-                <a href="#"><img src="icons/navbar/User-icon.svg" alt="" /></a>
+              <li class="personal__list-item">
+                <a href="#" class="personal__icon"><img class="personal__icon-user" src="icons/navbar/User-icon.svg" alt="" /></a>
               </li>
-              <li>
-                <a href="#"><img src="icons/navbar/Cart-icon.svg" alt="" /></a>
+              <li class="personal__list-item">
+                <a href="#" class="personal__icon"><img class="personal__icon-cart" src="icons/navbar/Cart-icon.svg" alt="" /></a>
               </li>
+              <!-- <span class="personal__cart-count">0</span> Сделать псевдоэлементом -->
             </ul>
           </div>
           <div class="divider"></div>
-          <div class="socials">
-            <div>
-              <div class="header__socials">
+
+          <div class="socials header__socials">
                 <a href="#" class="socials__item"
-                  ><img src="icons/social/Facebook.svg" alt=""
+                  ><img class="socials__icon-facebook" src="icons/social/Facebook.svg" alt="Фэйсбук"
                 /></a>
                 <a href="#" class="socials__item"
-                  ><img src="icons/social/Pinterest.svg" alt=""
+                  ><img class="socials__icon-pinterest" src="icons/social/Pinterest.svg" alt="Пинтерест"
                 /></a>
                 <a href="#" class="socials__item"
-                  ><img src="icons/social/Instagram.svg" alt=""
+                  ><img class="socials__icon-instagram" src="icons/social/Instagram.svg" alt="Инстаграм"
                 /></a>
-              </div>
-            </div>
+          </div>
+      </div>
+        </div>
+          </div>
+      <div class="header-bottom">
+        <div class="header__bottom-inner">
+          <div class="header__btn-wrapper">
+            <button class="btn header__btn--green-bg">Shop Now <img src="icons/arrow.png"></button> <!-- @TODO: Создать стрелку псевдоклассом -->
           </div>
         </div>
-      </div>
-      <div class="header-bottom">
-        <a href="#" class="header-bottom__link">
-          <button class="header-bottom__btn">Shop Now</button>
-        </a>
       </div>
     </header>
 
