@@ -14,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 70px 100px 0 100px;
+  padding: 70px 0 0 0;
   border: 3px solid #ae3e76;
 }
 
@@ -73,12 +73,6 @@
   background-color: #ffffff;
   border-radius: 100%;
 }
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 3px solid #224ee0;
-}
 
 .header__bottom-inner {
   margin-top: 110px;
@@ -100,6 +94,11 @@
   color: #ffffff;
   border: none;
 }
+.header-bottom {
+display: flex;
+justify-content: center;
+margin-top: 105px;
+}
 
 .smoothies {
   border: 3px solid #224ee0;
@@ -111,8 +110,10 @@
   border: 3px solid #ae3e76;
 }
 .smoothies__text {
-  max-width: 915px;
+  max-width: 920px;
   margin: 50px auto;
+  font-size: 18px;
+  font-weight: 400;
 }
 .features {
   max-height: 380px;
@@ -154,6 +155,9 @@
   border: 3px solid #224ee0;
 }
 .advantages__list {
+  font-size: 21px;
+  font-weight: 400;
+  color: #ffffff;
   list-style: none;
   border: 3px solid red;
 }
@@ -168,12 +172,17 @@
   margin-right: 20px;
   line-height: 100%;
 }
+.advantages__item--strong {
+  font-size: 21px;
+  font-weight: 600;
+}
 .about__title {
   border: 3px solid red;
 }
 .about__btn--yellow {
   width: 380px;
   height: 60px;
+  margin-top: 50px;
   font-size: 21px;
   font-weight: 800;
   border: 3px solid #f8b231;
@@ -194,6 +203,7 @@
   border: 3px solid red;
 }
 .products__subtitle {
+  display: block;
   font-size: 21px;
   font-weight: 400;
   font-style: italic;
@@ -228,9 +238,16 @@
 }
 .story__btn--green-bg {
   font-size: 21px;
+  font-weight: 700;
 }
 .story {
+  padding: 120px 100px 160px 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
+.somestory {
+ 
+
+}
+
