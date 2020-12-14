@@ -28,7 +28,7 @@
   align-items: center;
   list-style: none;
 }
-.menu__list .menu__link {
+.menu__link {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
@@ -40,6 +40,11 @@
   width: 211px;
   height: 70px;
   border: 3px solid #224ee0;
+}
+.logo__link {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .personal {
@@ -101,9 +106,9 @@
   border: none;
 }
 .header-bottom {
-display: flex;
-justify-content: center;
-margin-top: 105px;
+  display: flex;
+  justify-content: center;
+  margin-top: 105px;
 }
 
 .smoothies {
@@ -156,19 +161,20 @@ margin-top: 105px;
   color: #f8b231;
 }
 .advantages {
-  margin-right: 260px;
+  max-width: 586px;
   border: 3px solid #224ee0;
 }
 .welcome-img {
   position: relative;
-	display: block;     
-	margin-top: 200px;
+  display: block;
+  margin-top: 200px;
   z-index: 1;
   border: 3px solid #224ee0;
 }
 .advantages__list {
   font-size: 21px;
   font-weight: 400;
+  line-height: 1.75;
   color: #ffffff;
   list-style: none;
   border: 3px solid red;
@@ -256,14 +262,129 @@ margin-top: 105px;
   font-size: 21px;
   font-weight: 700;
 }
-.story {
-  padding: 120px 100px 160px 100px;
+
+.story-inner {
+  padding-top: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid red;
+}
+.somestory {
+  border: 3px solid #224ee0;
+  width: 512px;
+}
+.story__descr {
+  margin-top: 45px;
+  max-width: 555px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 2;
+  border: 3px solid #224ee0;
+}
+.story__btn--green-bg {
+  margin-top: 60px;
+}
+.feedback {
+  min-height: 720px;
+  padding-top: 120px;
+  text-align: center;
+  background: url(../images/sarah-holder.png) center center/cover no-repeat;
+  border: 3px solid red;
+}
+.somequote {
+  margin-top: 120px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  font-style: Italic;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 35px;
+  border: 3px solid #224ee0;
+}
+.feedback__quote {
+  
+}
+.feedback__quote-auth {
+  line-height: 45px;
+  display: block;
+  color: #f8b231;
+  border: 3px solid #224ee0;
+}
+.feedback__somequote-inner {
+  width: 475px;
+  margin-right: 60px;
+  border: 3px solid #224ee0;
+}
+.feedback__title--upper-orange {
+  text-transform: uppercase;
+  color: #f2612d;
+}
+.blog {
+  padding: 100px 360px 0 360px;
+}
+.blog__wrapper {
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.somestory {
- 
-
+.blog__feedback {
+  width: 540px;
 }
-
+.blog__subtitle--upper-red {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 40px;
+  color: #f2612d;
+}
+.blog__descr {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+}
+.blog__time {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+}
+.instagram__title-wrapper {
+  margin: 200px 0 50px 15px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.instagram__title {
+  margin-left: 15px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #0aa566;
+}
+.instagram__cocktails-images {
+  display: flex;
+}
+.instagram__img {
+  flex-basis: 0 1 25%;
+}
+.footer__wrapper {
+  margin-top: 10px;
+  padding-top: 50px;
+  height: 370px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url("../images/Holder-ft-bg.png") center center/cover no-repeat;
+}
+.information__list {
+  list-style: none;
+}
+.information__links {
+  text-decoration: none;
+  color: #6d450c;
+  font-size: 18px;
+  font-weight: 700;
+}
+.payment__link {
+  
+}

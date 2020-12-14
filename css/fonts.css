@@ -43,5 +43,10 @@ src: url('../fonts/Poppins-SemiBold.woff') format('woff');
 font-weight: 600;
 font-style: normal;
 }
-
+@font-face {
+    font-family: 'Muli';
+    src: url('../fonts/Muli-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: Italic;
+    }
 
