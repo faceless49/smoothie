@@ -14,6 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 69px 100px 0 100px;
   border: 3px solid #ae3e76;
 }
@@ -51,39 +52,42 @@
   display: flex;
   justify-content: space-around;
   align-content: center;
+  flex-wrap: wrap;
   border: 3px solid #224ee0;
 }
 .personal__list {
-  width: 170px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   list-style: none;
 }
+.personal__list-item {
+  padding-right: 45px;
+}
 
-.divider {
-  margin: 0 40px;
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.socials::before {
+  content: '';
+  margin-right: 40px;
   width: 47px;
   height: 2px;
   background-color: #ffd68f;
 }
 
-.socials {
-  width: 125px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .header__socials .socials__item {
   width: 32px;
   height: 32px;
+  margin-right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
   border-radius: 100%;
 }
+
 
 .header__bottom-inner {
   margin-top: 110px;
@@ -288,6 +292,7 @@
 .feedback {
   min-height: 720px;
   padding-top: 120px;
+  position: relative;
   text-align: center;
   background: url(../images/sarah-holder.png) center center/cover no-repeat;
   border: 3px solid red;
@@ -321,6 +326,49 @@
   text-transform: uppercase;
   color: #f2612d;
 }
+.feedback__arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #000000;
+  margin: 0 auto;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.feedback__arrows--left {
+  content: "";
+	display: block;
+	width: 30px;
+	height: 2px;
+	background-color: #f8b231;
+  transition: 0.3s all;
+}
+.feedback__arrows--left::before {
+  content: "";
+	display: block;
+	width: 9px;
+	height: 2px;
+	background-color: #f8b231;
+  transform: rotate(45deg);
+}
+
+
+
+/* 
+.feedback__arrows--right {
+  content: "";
+	display: block;
+	width: 30px;
+	height: 2px;
+	background-color: #f8b231;
+	transition: 0.3s all;
+} */
 .blog {
   padding: 100px 360px 0 360px;
 }
@@ -363,6 +411,7 @@
 }
 .instagram__cocktails-images {
   display: flex;
+  flex-wrap: wrap;
 }
 .instagram__img {
   flex-basis: 0 1 25%;
@@ -373,18 +422,41 @@
   height: 370px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   background: url("../images/Holder-ft-bg.png") center center/cover no-repeat;
 }
-.information__list {
+.footer-title {
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+.footer__information-list, .footer__payment-list {
   list-style: none;
 }
+.information__item {
+  display: flex;
+  align-items: center;
+  /* @TODO: Показать Свете, понять как верстать такие навигационные панели */
+}
 .information__links {
+  padding-bottom: 20px;
   text-decoration: none;
   color: #6d450c;
   font-size: 18px;
   font-weight: 700;
 }
-.payment__link {
-  
+
+.subscribebox {
+  height: 60px;
+  width: 495px;
+  background: #ffffff;
+  color: #6d450c;
+  border-radius: 50px;
+  font-size: 24px;
+  font-weight: 400;
+  border: none;
+}
+.subscribebox::-webkit-input-placeholder {
+  color: #6d450c;
+  font-size: 18px;
+  font-weight: 700;
 }
