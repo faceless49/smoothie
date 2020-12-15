@@ -54,9 +54,6 @@
             </li>
             <!-- <span class="personal__cart-count">0</span> @TODO:Make pseudoEl -->
           </ul>
-
-          <div class="divider"></div>
-
           <div class="socials header__socials">
             <a href="#" class="socials__item"><img class="socials__icon-facebook" src="icons/social/Facebook.svg"
                 alt="Facebook" /></a>
@@ -236,7 +233,10 @@
       </div>
       <img src="images/girl.png" alt="" />
     </div>
-    <div class="arrows">
+    <div class="feedback__arrows">
+      <div class="feedback__arrows--left"></div>
+      <div class="feedback__arrows--right"></div>
+    </div>
       <!-- <button>
         <a href="#"><img src="icons/Arrow.png" alt="" /></a>
       </button>   @TODO: Сделать псевдо, плюс фоном сару А
@@ -287,8 +287,9 @@
   <footer class="footer">
     <div class="footer__wrapper">
       <a class="logo footer__logo" href="#"><img src="images/logo.png" alt="" /></a>
-      <div class="information">
-        <ul class="information__list">
+      <div class="footer__item footer__item-info">
+        <h3 class="footer-title footer__info-title">Information</h3>
+        <ul class="footer__information-list">
           <li class="information__item">
             <a class="information__links" href="#">Search</a>
           </li>
@@ -303,38 +304,38 @@
           </li>
         </ul>
       </div>
-      <div class="payment">
-        <ul class="payment__list">
-          <li>
-            <a class="payment__link"href="#"><img src="icons/payments/AMEX.svg" alt="" /></a>
-            <a class="payment__link"href="#"><img src="icons/payments/Applepay.svg" alt="" /></a>
-            <a class="payment__link"href="#"><img src="icons/payments/Maestro.svg" alt="" /></a>
-            <a class="payment__link"href="#"><img src="icons/payments/Discover.svg" alt="" /></a>
+      <div class="footer__item footer__item--payment">
+        <h3 class="footer-title footer__payment-title">Payment</h3>
+        <ul class="footer__payment-list">
+          <li class="footer__payment-item">
+            <a class="footer__payment-link" href="#"><img src="icons/payments/AMEX.svg" alt="Logo AMEX" /></a>
+            <a class="footer__payment-link" href="#"><img src="icons/payments/Applepay.svg" alt="Logo Applepay" /></a>
+            <a class="footer__payment-link" href="#"><img src="icons/payments/Maestro.svg" alt="Logo Maestro" /></a>
+            <a class="footer__payment-link" href="#"><img src="icons/payments/Discover.svg" alt="logo Discover" /></a>
           </li>
-          <li> <a clas="payment__link"href="#"><img src="icons/payments/JCB.svg" alt="" /></a>
-            <a class="payment__link"href="#"><img src="icons/payments/Mastercard.svg" alt="" /></a>
-            <a class="payment__link"href="#"><img src="icons/payments/Paypal.svg" alt="" /></a>
-            <a class="payment__link"href="#"><img src="icons/payments/Discover.svg" alt="" /></a>
+          <li class="footer__payment-item"> 
+            <a class="footer__payment-link" href="#"><img src="icons/payments/JCB.svg" alt="logo JCB" /></a>
+            <a class="footer__payment-link" href="#"><img src="icons/payments/Mastercard.svg" alt="Logo Mastercard" /></a>
+            <a class="footer__payment-link" href="#"><img src="icons/payments/Paypal.svg" alt="Logo Paypal" /></a>
+
           </li>
-          <li> <a href="#"><img src="icons/payments/Shopify Pay.svg" alt="" /></a>
-            <a href="#"><img src="icons/payments/Visa.svg" alt="" /></a>
+          <li class="footer__payment-item"> 
+            <a class="footer__payment-link" href="#"><img src="icons/payments/Shopify Pay.svg" alt="Logo shopify pay" /></a>
+            <a class="footer__payment-link" href="#"><img src="icons/payments/Visa.svg" alt="logo Visa" /></a>
           </li>
         </ul>
       </div>
-      <div class="subscribe">
-        <button>Subscribe to our newsletter</button>
+      <div class="footer__item footer__item-subscribe">
+        <h3 class="footer-title footer__subscribe-title">Don't miss out</h3>
+        <input class="subscribebox" type="email" name="EMAIL" placeholder="Subscribe to our newsletter">
+
         <!-- Нагуглить как позиционировать имг в баттонах -->
-        <div class="follow">
-          <div class="follow-text">Follow us</div>
-          <div class="socials">
-            <div>
-              <div class="footer__socials">
-                <a href="#" class="socials__item"><img src="icons/social/Facebook.svg" alt="" /></a>
-                <a href="#" class="socials__item"><img src="icons/social/Pinterest.svg" alt="" /></a>
-                <a href="#" class="socials__item"><img src="icons/social/Instagram.svg" alt="" /></a>
-              </div>
-            </div>
-          </div>
+          <div class="socials footer__socials">
+                <img src="footer__follow-img" alt="">
+                <span class="footer__follow-text">Follow us</span>
+                <a href="#" class="socials__item"><img src="icons/social/Facebook.svg" alt="Logo Facebook" /></a>
+                <a href="#" class="socials__item"><img src="icons/social/Pinterest.svg" alt="Logo Pinterest" /></a>
+                <a href="#" class="socials__item"><img src="icons/social/Instagram.svg" alt="Logo instagram" /></a>
         </div>
       </div>
     </div>
