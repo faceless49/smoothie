@@ -218,7 +218,9 @@
           Who we are <img src="icons/arrow.png" />
         </button>
       </div>
-      <img class="cocktail-image" src="images/cocktail.png" alt="Nice cocktail" />
+      <div class="cocktail-image-wrapper">
+        <img class="cocktail-image" src="images/cocktail.png" alt="Nice cocktail" />
+      </div>
     </div>
   </section>
 
@@ -234,8 +236,8 @@
       <img src="images/girl.png" alt="" />
     </div>
     <div class="feedback__arrows">
-      <div class="feedback__arrows--left"></div>
-      <div class="feedback__arrows--right"></div>
+      <a class="feedback__arrows--left"></a>
+      <a class="feedback__arrows--right"></a>
     </div>
       <!-- <button>
         <a href="#"><img src="icons/Arrow.png" alt="" /></a>
@@ -251,13 +253,15 @@
     <div class="blog__wrapper">
       <img class="cocktails-image" src="images/twococktails.png" alt="" />
       <article class="blog__feedback">
-        <h3 class="blog__subtitle--upper-red">ASAFOETIDA - THE NEXT TURMERIC?</h3>
-        <time class="blog__time" datetime="2012-12-23">jun 16, 2020</time>
-        <p class="blog__descr">
-          If the fruit ingredients and the green vegetable ingredients are both
-          juiced ahead of time, the mixed juice doesn't even have to be blended
-          like a smoothie, i.e. a green juice or anything... <span>Read More</span>
-          <!--@TODO: Button or what? -->
+        <div class="feedback-wrapper">
+          <h3 class="blog__subtitle--upper-red">ASAFOETIDA - THE NEXT TURMERIC?</h3>
+          <time class="blog__time" datetime="2012-12-23">jun 16, 2020</time>
+          <p class="blog__descr">
+            If the fruit ingredients and the green vegetable ingredients are both
+            juiced ahead of time, the mixed juice doesn't even have to be blended
+            like a smoothie, i.e. a green juice or anything... <span class="blog__descr-more">Read More</span>
+            <!--@TODO: Button or what? -->
+        </div>
         </p>
       </article>
     </div>
@@ -286,7 +290,8 @@
 
   <footer class="footer">
     <div class="footer__wrapper">
-      <a class="logo footer__logo" href="#"><img src="images/logo.png" alt="" /></a>
+      <div class="footer__logo"></div>
+      <a class="logo" href="#"><img src="images/logo.png" alt="" /></a>
       <div class="footer__item footer__item-info">
         <h3 class="footer-title footer__info-title">Information</h3>
         <ul class="footer__information-list">
@@ -327,15 +332,17 @@
       </div>
       <div class="footer__item footer__item-subscribe">
         <h3 class="footer-title footer__subscribe-title">Don't miss out</h3>
-        <input class="subscribebox" type="email" name="EMAIL" placeholder="Subscribe to our newsletter">
-
+        <form class="emailbox">
+          <span class="icon-email"></span>
+          <input class="subscribebox" type="email" name="EMAIL" placeholder="Subscribe to our newsletter">
+        </form>
         <!-- Нагуглить как позиционировать имг в баттонах -->
-          <div class="socials footer__socials">
+          <div class="footer__socials">
                 <img src="footer__follow-img" alt="">
                 <span class="footer__follow-text">Follow us</span>
-                <a href="#" class="socials__item"><img src="icons/social/Facebook.svg" alt="Logo Facebook" /></a>
-                <a href="#" class="socials__item"><img src="icons/social/Pinterest.svg" alt="Logo Pinterest" /></a>
-                <a href="#" class="socials__item"><img src="icons/social/Instagram.svg" alt="Logo instagram" /></a>
+                <a href="#" class="footer__socials-link socials__item"><img src="icons/social/Facebook.svg" alt="Logo Facebook" /></a>
+                <a href="#" class="footer__socials-link socials__item"><img src="icons/social/Pinterest.svg" alt="Logo Pinterest" /></a>
+                <a href="#" class="footer__socials-link socials__item"><img src="icons/social/Instagram.svg" alt="Logo instagram" /></a>
         </div>
       </div>
     </div>
