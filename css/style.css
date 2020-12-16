@@ -129,26 +129,36 @@
   font-size: 18px;
   font-weight: 400;
 }
-.features {
+/* .features {
   max-height: 380px;
   max-width: 1010px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; @FIXME: Разметка таблицы флексами, лучше изучить больше гриды.
+} */
+
+.features {
+  display: grid;
+  grid-template-rows: repeat(2, 180px);
+  grid-template-columns: repeat(4, 240px);
+  justify-content: center;
 }
 
 .features__item {
-  width: 240px;
-  height: 180px;
+  padding: 10px 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  border: 1px solid #efeee9;
-  bordernone: ; /*@TODO: псевдодочкам сделать бордеры;*/
+  justify-content: space-around;
+  border: 2px solid #efeee9;
 }
 .features__descr {
-  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #f8b231;
 }
+ /* @FIXME: Заменить дома цвет */
+
+ 
 .about__inner {
   position: relative;
   max-height: 800px;
@@ -396,12 +406,20 @@
   color: #0aa566;
 }
 .instagram__cocktails-images {
-  display: flex;
+    display: flex;
   flex-shrink: 1;
   flex-wrap: wrap;
 }
 .instagram__img {
+  position: relative;
   width: 20%;
+}
+.instagram__img::after {
+  content: url(../icons/social/Instagram.svg);        /* @FIXME: Почему её нет? */
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .footer__wrapper {
   margin-top: 10px;
@@ -409,7 +427,7 @@
   height: 370px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   background: url("../images/Holder-ft-bg.png") center center/cover no-repeat;
 }
 .footer-title {
@@ -436,6 +454,7 @@
 .subscribebox {
   height: 60px;
   width: 495px;
+  padding-left: 70px;
   background: #ffffff;
   color: #6d450c;
   border-radius: 50px;
@@ -443,12 +462,25 @@
   font-weight: 400;
   border: none;
   position: relative;
+  
 }
 
 .subscribebox::-webkit-input-placeholder {
   color: #6d450c;
   font-size: 18px;
   font-weight: 700;
+  line-height: 60px;
+}
+.emailbox {
+  position: relative;
+}
+.icon-email {
+  position: absolute;
+  z-index: 1;
+  font-size: 35px;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .footer__socials {
   margin-top: 30px;
