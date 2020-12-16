@@ -37,7 +37,6 @@
           </ul>
         </nav>
         <a class="logo__link" href="#"><img class="logo" src="images/logo.png" alt="Logo" /></a>
-
         <div class="personal">
           <ul class="personal__list">
             <li class="personal__list-item">
@@ -87,9 +86,7 @@
         butter, seeds, tea, chocolate, herbal supplements, or nutritional
         supplements.
       </p>
-
-      
-      <div class="features">
+      <div class="smoothies__features features">
         <div class="features__item">
           <img src="icons/features/plant.svg" alt="Plant smoothie" />
           <h4 class="features__descr">Plant Based</h4>
@@ -128,8 +125,8 @@
 
   <section class="about">
     <div class="about__inner">
-      <img class="welcome-img" src="images/welcomesum.png" alt="Welcome Summer!" />
-      <div class="advantages">
+      <img class="about__welcome-img" src="images/welcomesum.png" alt="Welcome Summer!" />
+      <div class="about__advantages advantages">
         <h2 class="title about__title">
           What makes Smoothie
           an <span class="about__title-grn">awesome drink?</span>
@@ -167,11 +164,10 @@
       </div>
     </div>
   </section>
-  
 
   <section class="products">
     <div class="products__item products__item--chocolate">
-      <img class="products__images" src="images/darkchocolate.png" alt="Dark chocolate" />
+      <img class="products__image" src="images/darkchocolate.png" alt="Dark chocolate" />
       <h4 class="products__descr">Dark Chocolate Smoothie</h4>
       <span class="products__subtitle">100 ml</span>
       <button class="btn products__btn--white">
@@ -206,9 +202,9 @@
 
   <section class="story">
     <div class="story-inner">
-      <div class="somestory">
+      <div class="somestory"> <!-- @FIXME: story__somestory -->
         <h2 class="title story__title">Our story</h2>
-        <div class="story-text">
+        <div class="story-text"> <!-- @FIXME: check -->
           <p class="story__descr">
             As products typically using raw fruits or vegetables, smoothies
             include dietary fiber (e.g. pulp, skin, and seeds) and so are
@@ -220,7 +216,7 @@
           Who we are <img src="icons/arrow.png" />
         </button>
       </div>
-      <div class="cocktail-image-wrapper">
+      <div class="cocktail-image-wrapper"> <!-- @FIXME: story__cocktail-image-wrapper -->
         <img class="cocktail-image" src="images/cocktail.png" alt="Nice cocktail" />
       </div>
     </div>
@@ -228,7 +224,7 @@
 
   <section class="feedback">
     <h2 class="title feedback__title">Why clients <span class="feedback__title--upper-orange">love</span> us?</h2>
-    <div class="somequote">
+    <div class="somequote"> <!-- @FIXME: feedback__somequote -->
       <div class="feedback__somequote-inner">
         <q class="feedback__quote">
           Smoothie is great. I don't know what else to say. I will let my mum
@@ -238,12 +234,12 @@
       <img src="images/girl.png" alt="" />
     </div>
     <div class="feedback__arrows">
-      <a class="feedback__arrows--left"></a>
+      <a class="feedback__arrows--left"></a> 
       <a class="feedback__arrows--right"></a>
     </div>
-      <!-- <button>
+    <!-- <button>
         <a href="#"><img src="icons/Arrow.png" alt="" /></a>
-      </button>   @TODO: Сделать псевдо, плюс фоном сару А
+      </button>   @TODO: , плюс фоном сару А
       <button>
         <a href="#"><img src="icons/Arrow.png" alt="" /></a>
       </button>
@@ -252,7 +248,7 @@
 
   <section class="blog">
     <h2 class="title blog__title">Our blog</h2>
-    <div class="blog__wrapper">
+    <div class="blog__wrapper"> <!-- @FIXME: blog__cocktails-image -->
       <img class="cocktails-image" src="images/twococktails.png" alt="" />
       <article class="blog__feedback">
         <div class="feedback-wrapper">
@@ -261,8 +257,7 @@
           <p class="blog__descr">
             If the fruit ingredients and the green vegetable ingredients are both
             juiced ahead of time, the mixed juice doesn't even have to be blended
-            like a smoothie, i.e. a green juice or anything... <span class="blog__descr-more">Read More</span>
-            <!--@TODO: Button or what? -->
+            like a smoothie, i.e. a green juice or anything... <!-- @FIXME: add long div --> <span class="blog__descr-more">Read More</span>
         </div>
         </p>
       </article>
@@ -294,11 +289,11 @@
     <div class="footer__wrapper">
       <div class="footer__logo"></div>
       <a class="logo" href="#"><img src="images/logo.png" alt="" /></a>
-      <div class="footer__item footer__item-info">
-        <h3 class="footer-title footer__info-title">Information</h3>
-        <ul class="footer__information-list">
-          <li class="information__item">
-            <a class="information__links" href="#">Search</a>
+      <div class="footer__item footer__item-info"> <!-- @FIXME: delete 2 class -->
+        <h3 class="footer-title footer__info-title">Information</h3><!--  @FIXME: delete2class -->
+        <ul class="footer__information-list"> 
+          <li class="information information__item"> <!--  @FIXME: footer__ -->
+            <!-- <a class="information__links" href="#">Search</a>
           </li>
           <li class="information__item">
             <a class="information__links" href="#">Contact us</a>
@@ -310,8 +305,8 @@
             <a class="information__links" href="#">Privacy Policy</a>
           </li>
         </ul>
-      </div>
-      <div class="footer__item footer__item--payment">
+      </div> -->
+      <div class="footer__item footer__item-payment">
         <h3 class="footer-title footer__payment-title">Payment</h3>
         <ul class="footer__payment-list">
           <li class="footer__payment-item">
@@ -320,14 +315,16 @@
             <a class="footer__payment-link" href="#"><img src="icons/payments/Maestro.svg" alt="Logo Maestro" /></a>
             <a class="footer__payment-link" href="#"><img src="icons/payments/Discover.svg" alt="logo Discover" /></a>
           </li>
-          <li class="footer__payment-item"> 
+          <li class="footer__payment-item">
             <a class="footer__payment-link" href="#"><img src="icons/payments/JCB.svg" alt="logo JCB" /></a>
-            <a class="footer__payment-link" href="#"><img src="icons/payments/Mastercard.svg" alt="Logo Mastercard" /></a>
+            <a class="footer__payment-link" href="#"><img src="icons/payments/Mastercard.svg"
+                alt="Logo Mastercard" /></a>
             <a class="footer__payment-link" href="#"><img src="icons/payments/Paypal.svg" alt="Logo Paypal" /></a>
 
           </li>
-          <li class="footer__payment-item"> 
-            <a class="footer__payment-link" href="#"><img src="icons/payments/Shopify Pay.svg" alt="Logo shopify pay" /></a>
+          <li class="footer__payment-item">
+            <a class="footer__payment-link" href="#"><img src="icons/payments/Shopify Pay.svg"
+                alt="Logo shopify pay" /></a>
             <a class="footer__payment-link" href="#"><img src="icons/payments/Visa.svg" alt="logo Visa" /></a>
           </li>
         </ul>
@@ -339,16 +336,18 @@
           <input class="subscribebox" type="email" name="EMAIL" placeholder="Subscribe to our newsletter">
         </form>
         <!-- Нагуглить как позиционировать имг в баттонах -->
-          <div class="footer__socials">
-                <img src="footer__follow-img" alt="">
-                <span class="footer__follow-text">Follow us</span>
-                <a href="#" class="footer__socials-link socials__item"><img src="icons/social/Facebook.svg" alt="Logo Facebook" /></a>
-                <a href="#" class="footer__socials-link socials__item"><img src="icons/social/Pinterest.svg" alt="Logo Pinterest" /></a>
-                <a href="#" class="footer__socials-link socials__item"><img src="icons/social/Instagram.svg" alt="Logo instagram" /></a>
+        <div class="footer__socials">
+          <img src="footer__follow-img" alt="">
+          <span class="footer__follow-text">Follow us</span>
+          <a href="#" class="footer__socials-link socials__item"><img src="icons/social/Facebook.svg"
+              alt="Logo Facebook" /></a>
+          <a href="#" class="footer__socials-link socials__item"><img src="icons/social/Pinterest.svg"
+              alt="Logo Pinterest" /></a>
+          <a href="#" class="footer__socials-link socials__item"><img src="icons/social/Instagram.svg"
+              alt="Logo instagram" /></a>
         </div>
       </div>
     </div>
-
     <div class="footer-end">&copy;2020. All rights Reserved.</div>
   </footer>
 </body>
