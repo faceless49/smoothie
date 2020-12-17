@@ -23,18 +23,23 @@
   border: 3px solid #224ee0;
 }
 .menu__list {
-  width: 540px;
   display: flex;
-  justify-content: space-around;
   align-items: center;
   list-style: none;
 }
+
 .menu__link {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
+}
+.menu__item {
+  margin-right: 35px;
+}
+.menu__item:last-child {
+  margin-right: 0;
 }
 
 .logo {
@@ -87,7 +92,9 @@
   background-color: #ffffff;
   border-radius: 100%;
 }
-
+.socials__item:last-child {
+  margin-right: 0;
+}
 .header__bottom-inner {
   margin-top: 110px;
   display: flex;
@@ -104,9 +111,11 @@
   border-radius: 50px;
   font-size: 24px;
   font-weight: 400;
+  border: none;
+}
+.header__btn--green-bg {
   background-color: #0aa466;
   color: #ffffff;
-  border: none;
 }
 
 .header-bottom {
@@ -129,6 +138,10 @@
   margin: 50px auto;
   font-size: 18px;
   font-weight: 400;
+  border: 3px solid #224ee0;
+}
+.smoothies__title {
+  border: 3px solid #224ee0;
 }
 /* .features {
   max-height: 380px;
@@ -221,6 +234,7 @@
   font-weight: 800;
   border: 3px solid #f8b231;
   background-color: transparent;
+  color: #ffffff;
 }
 
 .products {
@@ -269,10 +283,14 @@
   border: 3px solid #ffffff;
   text-align: center;
   background-color: transparent;
+  color: #ffffff;
+  
 }
 .story__btn--green-bg {
   font-size: 21px;
   font-weight: 700;
+  background-color: #0aa466;
+  color: #ffffff;
 }
 
 .story-inner {
@@ -282,13 +300,14 @@
   align-items: center;
   border: 3px solid red;
 }
-.cocktail-image-wrapper::before {
+.story__cocktail-image-wrapper::before {
   content: url(../images/stamp.png);
   position: absolute;
   left: 50%;
   transform: translateX(-60%);
+  border: 3px solid #224ee0;
 }
-.somestory {
+.story__somestory {
   border: 3px solid #224ee0;
   width: 540px;
 }
@@ -312,7 +331,7 @@
   background: url(../images/sarah-holder.png) center center/cover no-repeat;
   border: 3px solid red;
 }
-.somequote {
+.feedback__somequote {
   margin-top: 120px;
   display: flex;
   justify-content: center;
@@ -333,6 +352,7 @@
   color: #59230d;
   font-size: 200px;
   font-weight: 800;
+  border: 3px solid red;
 }
 
 .feedback__quote-auth {
@@ -354,7 +374,7 @@
 .blog {
   padding: 100px 360px 0 360px;
 }
-.blog__wrapper {
+.blog__cocktails-image {
   max-width: 1200px;
   margin-top: 50px;
   display: flex;
@@ -370,6 +390,7 @@
   font-weight: 800;
   line-height: 40px;
   color: #f2612d;
+  border: 3px solid #224ee0;
 }
 .blog__feedback::before {
   content: "";
@@ -377,20 +398,29 @@
   height: 12px;
   display: block;
   background-color: #f8ac38;
+  border: 3px solid violet;
 }
 .blog__descr {
   padding-left: 65px;
   font-size: 18px;
   font-weight: 400;
   line-height: 35px;
+  border: 3px solid #224ee0;
 }
 .blog__descr-more {
   font-weight: 800;
+}
+.blog__title {
+  border: 3px solid #224ee0;
 }
 .blog__time {
   font-size: 16px;
   font-weight: 400;
   line-height: 35px;
+  border: 3px solid red;
+}
+.instagram {
+  border: 3px solid red;
 }
 .instagram__title-wrapper {
   margin: 200px 0 50px 15px;
@@ -403,15 +433,18 @@
   font-size: 24px;
   font-weight: 800;
   color: #0aa566;
+  border: 3px solid red;
 }
 .instagram__cocktails-images {
   display: flex;
   flex-shrink: 1;
   flex-wrap: wrap;
+  border: 3px solid red;
 }
 .instagram__img {
   position: relative;
   width: 20%;
+  
 }
 .instagram__img::after {
   content: url(../icons/social/Instagram.svg); /* @FIXME: Почему её нет? */
@@ -419,29 +452,57 @@
   z-index: 1;
   left: 50%;
   transform: translateX(-50%);
+  border: 3px solid red;
 }
 .footer__wrapper {
   margin-top: 10px;
-  padding-top: 50px;
   height: 370px;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: center;
   background: url("../images/Holder-ft-bg.png") center center/cover no-repeat;
+  border: 3px solid red;
+}
+.footer__blocks-wrapper {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  align-self: center;
+  border: 3px solid blue;
+}
+.footer__logo {
+  align-self: center;
+  margin-left: 100px;
+  border: 3px solid blue;
 }
 .footer-title {
   margin-bottom: 40px;
   color: #ffffff;
+  border: 3px solid violet;
 }
-.footer__information-list,
-.footer__payment-list {
-  list-style: none;
-}
+
 .information__item {
+  list-style: none;
   display: flex;
-  align-items: center;
-  /* @TODO: Показать Свете, понять как верстать такие навигационные панели */
+  flex-direction: column;
+  border: 3px solid blue;
 }
+.footer__payment-title {
+  margin-bottom: 0;
+}
+.footer__payment-list {
+  width: 265px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 3px solid blue;
+}
+.footer__payment-link {
+  margin-right: 20px;
+  margin: 20px 20px 0 0;
+  border: 3px solid blue;
+}
+
 .information__links {
   padding-bottom: 20px;
   text-decoration: none;
@@ -461,6 +522,7 @@
   font-weight: 400;
   border: none;
   position: relative;
+  border: 3px solid red;
 }
 
 .subscribebox::-webkit-input-placeholder {
@@ -480,11 +542,13 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
 .footer__socials {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 30px;
+  border: 3px solid blue;
 }
 .footer__follow-text {
   text-transform: uppercase;
@@ -499,4 +563,5 @@
   align-items: center;
   font-size: 13px;
   color: #ffffff;
+  border: 3px solid red;
 }

@@ -40,26 +40,26 @@
         <div class="personal">
           <ul class="personal__list">
             <li class="personal__list-item">
-              <a href="#" class="personal__icon"><img class="personal__icon-search" src="icons/navbar/Search-icon.svg"
+              <a href="#" class="personal__icon"><img class="personal__icon" src="icons/navbar/Search-icon.svg"
                   alt="" /></a>
             </li>
             <li class="personal__list-item">
-              <a href="#" class="personal__icon"><img class="personal__icon-user" src="icons/navbar/User-icon.svg"
+              <a href="#" class="personal__icon"><img class="personal__icon" src="icons/navbar/User-icon.svg"
                   alt="" /></a>
             </li>
             <li class="personal__list-item">
-              <a href="#" class="personal__icon"><img class="personal__icon-cart" src="icons/navbar/Cart-icon.svg"
+              <a href="#" class="personal__icon"><img class="personal__icon" src="icons/navbar/Cart-icon.svg"
                   alt="" /></a>
             </li>
             <!-- <span class="personal__cart-count">0</span> @TODO:Make pseudoEl -->
           </ul>
           <div class="socials header__socials">
-            <a href="#" class="socials__item"><img class="socials__icon-facebook" src="icons/social/Facebook.svg"
+            <a href="#" class="socials__item"><img class="socials__icon" src="icons/social/Facebook.svg"
                 alt="Facebook" /></a>
-            <a href="#" class="socials__item"><img class="socials__icon-pinterest" src="icons/social/Pinterest.svg"
+            <a href="#" class="socials__item"><img class="socials__icon" src="icons/social/Pinterest.svg"
                 alt="Pinterest" /></a>
-            <a href="#" class="socials__item"><img class="socials__icon-instagram" src="icons/social/Instagram.svg"
-                alt="Instagram" /></a>
+            <a href="#" class="socials__item"><img class="socials__icon" src="icons/social/Instagram.svg"
+                alt="Instagram" /></a> <!-- @FIXME: DELETE MARGIN RIGHT!! -->
           </div>
         </div>
       </div>
@@ -202,9 +202,9 @@
 
   <section class="story">
     <div class="story-inner">
-      <div class="somestory"> <!-- @FIXME: story__somestory -->
+      <div class="story__somestory">
         <h2 class="title story__title">Our story</h2>
-        <div class="story-text"> <!-- @FIXME: check -->
+        <div class="story__text">
           <p class="story__descr">
             As products typically using raw fruits or vegetables, smoothies
             include dietary fiber (e.g. pulp, skin, and seeds) and so are
@@ -216,7 +216,7 @@
           Who we are <img src="icons/arrow.png" />
         </button>
       </div>
-      <div class="cocktail-image-wrapper"> <!-- @FIXME: story__cocktail-image-wrapper -->
+      <div class="story__cocktail-image-wrapper">
         <img class="cocktail-image" src="images/cocktail.png" alt="Nice cocktail" />
       </div>
     </div>
@@ -224,7 +224,7 @@
 
   <section class="feedback">
     <h2 class="title feedback__title">Why clients <span class="feedback__title--upper-orange">love</span> us?</h2>
-    <div class="somequote"> <!-- @FIXME: feedback__somequote -->
+    <div class="feedback__somequote">
       <div class="feedback__somequote-inner">
         <q class="feedback__quote">
           Smoothie is great. I don't know what else to say. I will let my mum
@@ -234,12 +234,12 @@
       <img src="images/girl.png" alt="" />
     </div>
     <div class="feedback__arrows">
-      <a class="feedback__arrows--left"></a> 
+      <a class="feedback__arrows--left"></a>
       <a class="feedback__arrows--right"></a>
     </div>
     <!-- <button>
         <a href="#"><img src="icons/Arrow.png" alt="" /></a>
-      </button>   @TODO: , плюс фоном сару А
+      </button>   @TODO: 
       <button>
         <a href="#"><img src="icons/Arrow.png" alt="" /></a>
       </button>
@@ -248,7 +248,7 @@
 
   <section class="blog">
     <h2 class="title blog__title">Our blog</h2>
-    <div class="blog__wrapper"> <!-- @FIXME: blog__cocktails-image -->
+    <div class="blog__cocktails-image">
       <img class="cocktails-image" src="images/twococktails.png" alt="" />
       <article class="blog__feedback">
         <div class="feedback-wrapper">
@@ -257,7 +257,8 @@
           <p class="blog__descr">
             If the fruit ingredients and the green vegetable ingredients are both
             juiced ahead of time, the mixed juice doesn't even have to be blended
-            like a smoothie, i.e. a green juice or anything... <!-- @FIXME: add long div --> <span class="blog__descr-more">Read More</span>
+            like a smoothie, i.e. a green juice or anything...
+            <!-- @FIXME: add long div --> <span class="blog__descr-more">Read More</span>
         </div>
         </p>
       </article>
@@ -287,64 +288,58 @@
 
   <footer class="footer">
     <div class="footer__wrapper">
-      <div class="footer__logo"></div>
-      <a class="logo" href="#"><img src="images/logo.png" alt="" /></a>
-      <div class="footer__item footer__item-info"> <!-- @FIXME: delete 2 class -->
-        <h3 class="footer-title footer__info-title">Information</h3><!--  @FIXME: delete2class -->
-        <ul class="footer__information-list"> 
-          <li class="information information__item"> <!--  @FIXME: footer__ -->
-            <!-- <a class="information__links" href="#">Search</a>
-          </li>
-          <li class="information__item">
-            <a class="information__links" href="#">Contact us</a>
-          </li>
-          <li class="information__item">
-            <a class="information__links" href="#">Terms & conditions</a>
-          </li>
-          <li class="information__item">
-            <a class="information__links" href="#">Privacy Policy</a>
-          </li>
-        </ul>
-      </div> -->
-      <div class="footer__item footer__item-payment">
-        <h3 class="footer-title footer__payment-title">Payment</h3>
-        <ul class="footer__payment-list">
-          <li class="footer__payment-item">
+      <a class="logo footer__logo" href="#"><img src="images/logo.png" alt="" /></a>
+      <div class="footer__blocks-wrapper">
+        <div class="footer__item information">
+          <h3 class="footer-title">Information</h3>
+          <ul class="footer__information-list information__list">
+            <li class="information__item">
+              <a class="information__links" href="#">Search</a>
+            </li>
+            <li class="information__item">
+              <a class="information__links" href="#">Contact us</a>
+            </li>
+            <li class="information__item">
+              <a class="information__links" href="#">Terms & conditions</a>
+            </li>
+            <li class="information__item">
+              <a class="information__links" href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item footer__item-payment">
+          <h3 class="footer-title footer__payment-title">Payment</h3>
+          <div class="footer__payment-list">
             <a class="footer__payment-link" href="#"><img src="icons/payments/AMEX.svg" alt="Logo AMEX" /></a>
             <a class="footer__payment-link" href="#"><img src="icons/payments/Applepay.svg" alt="Logo Applepay" /></a>
             <a class="footer__payment-link" href="#"><img src="icons/payments/Maestro.svg" alt="Logo Maestro" /></a>
             <a class="footer__payment-link" href="#"><img src="icons/payments/Discover.svg" alt="logo Discover" /></a>
-          </li>
-          <li class="footer__payment-item">
             <a class="footer__payment-link" href="#"><img src="icons/payments/JCB.svg" alt="logo JCB" /></a>
             <a class="footer__payment-link" href="#"><img src="icons/payments/Mastercard.svg"
                 alt="Logo Mastercard" /></a>
             <a class="footer__payment-link" href="#"><img src="icons/payments/Paypal.svg" alt="Logo Paypal" /></a>
-
-          </li>
-          <li class="footer__payment-item">
             <a class="footer__payment-link" href="#"><img src="icons/payments/Shopify Pay.svg"
                 alt="Logo shopify pay" /></a>
             <a class="footer__payment-link" href="#"><img src="icons/payments/Visa.svg" alt="logo Visa" /></a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__item footer__item-subscribe">
-        <h3 class="footer-title footer__subscribe-title">Don't miss out</h3>
-        <form class="emailbox">
-          <span class="icon-email"></span>
-          <input class="subscribebox" type="email" name="EMAIL" placeholder="Subscribe to our newsletter">
-        </form>
-        <!-- Нагуглить как позиционировать имг в баттонах -->
-        <div class="footer__socials">
-          <img src="footer__follow-img" alt="">
-          <span class="footer__follow-text">Follow us</span>
-          <a href="#" class="footer__socials-link socials__item"><img src="icons/social/Facebook.svg"
-              alt="Logo Facebook" /></a>
-          <a href="#" class="footer__socials-link socials__item"><img src="icons/social/Pinterest.svg"
-              alt="Logo Pinterest" /></a>
-          <a href="#" class="footer__socials-link socials__item"><img src="icons/social/Instagram.svg"
-              alt="Logo instagram" /></a>
+          </div>
+        </div>
+        <div class="footer__item footer__item-subscribe">
+          <h3 class="footer-title footer__subscribe-title">Don't miss out</h3>
+          <form class="emailbox">
+            <span class="icon-email"></span>
+            <input class="subscribebox" type="email" name="EMAIL" placeholder="Subscribe to our newsletter">
+          </form>
+          <!-- Нагуглить как позиционировать имг в баттонах -->
+          <div class="footer__socials">
+            <img src="footer__follow-img" alt="">
+            <span class="footer__follow-text">Follow us</span>
+            <a href="#" class="footer__socials-link socials__item"><img src="icons/social/Facebook.svg"
+                alt="Logo Facebook" /></a>
+            <a href="#" class="footer__socials-link socials__item"><img src="icons/social/Pinterest.svg"
+                alt="Logo Pinterest" /></a>
+            <a href="#" class="footer__socials-link socials__item"><img src="icons/social/Instagram.svg"
+                alt="Logo instagram" /></a>
+          </div>
         </div>
       </div>
     </div>
