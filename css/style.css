@@ -138,6 +138,9 @@
   position: absolute;
   right: 40px;
 }
+.header__btn--green-bg:active {
+	background-color: #2bc286;
+}
 
 .header-bottom {
   display: flex;
