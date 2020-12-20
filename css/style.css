@@ -510,9 +510,9 @@
   width: 20%;
 }
 .instagram__img:hover {
-  transform: scale(1.2);
-  z-index: 1;
-  transition: all 0.7s;
+  z-index: 2;
+  outline: 5px solid #c24ab8;
+  outline-offset: 1px;
 }
 /* .instagram__img::after {
   content: url(../icons/social/Instagram.svg); @FIXME: Почему её нет? 
