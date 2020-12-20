@@ -251,7 +251,7 @@
   width: 380px;
   height: 60px;
   margin-top: 50px;
-   padding: 18px 98px 15px 25px; 
+  padding: 18px 98px 15px 25px;
   text-align: center;
   font-size: 21px;
   font-weight: 800;
@@ -321,6 +321,12 @@
   position: absolute;
   right: 36px;
   bottom: 14px;
+}
+.products__images:hover {
+  transform: scale(1.2);
+  z-index: 1;
+  transition: all 0.7s;
+
 }
 .story__btn--green-bg {
   width: 301px;
@@ -496,7 +502,6 @@
 }
 .instagram__cocktails-images {
   display: flex;
-  flex-shrink: 1;
   flex-wrap: wrap;
   border: 3px solid red;
 }
@@ -504,14 +509,19 @@
   position: relative;
   width: 20%;
 }
-.instagram__img::after {
-  content: url(../icons/social/Instagram.svg); /* @FIXME: Почему её нет? */
+.instagram__img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+  transition: all 0.7s;
+}
+/* .instagram__img::after {
+  content: url(../icons/social/Instagram.svg); @FIXME: Почему её нет? 
   position: absolute;
   z-index: 1;
   left: 50%;
   transform: translateX(-50%);
   border: 3px solid red;
-}
+} */
 .footer__wrapper {
   margin-top: 10px;
   height: 370px;
@@ -608,7 +618,6 @@
   border: 3px solid red;
 }
 .footer__socials {
-
   border: 3px solid blue;
 }
 
@@ -643,11 +652,10 @@
   border: 3px solid red;
 }
 
-
 /** Здесь будет проба Readmore **/
 .read-more-text {
   opacity: 0;
   max-height: 0;
   font-size: 0;
-  transition: .25s ease;
+  transition: 0.25s ease;
 }
