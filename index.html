@@ -48,10 +48,9 @@
                   alt="" /></a>
             </li>
             <li class="personal__list-item">
-              <a href="#" class="personal__icon"><img class="personal__icon" src="icons/navbar/Cart-icon.svg"
+              <a href="#" class="personal__icon-cart"><img class="personal__icon" src="icons/navbar/Cart-icon.svg"
                   alt="" /></a>
             </li>
-            <!-- <span class="personal__cart-count">0</span> @TODO:Make pseudoEl -->
           </ul>
           <div class="socials header__socials">
             <a href="#" class="socials__item"><img class="socials__icon" src="icons/social/Facebook.svg"
@@ -59,7 +58,7 @@
             <a href="#" class="socials__item"><img class="socials__icon" src="icons/social/Pinterest.svg"
                 alt="Pinterest" /></a>
             <a href="#" class="socials__item"><img class="socials__icon" src="icons/social/Instagram.svg"
-                alt="Instagram" /></a> <!-- @FIXME: DELETE MARGIN RIGHT!! -->
+                alt="Instagram" /></a>
           </div>
         </div>
       </div>
@@ -67,9 +66,8 @@
     <div class="header-bottom">
       <div class="header__btn-wrapper">
         <button class="btn header__btn--green-bg">
-          Shop Now <img src="icons/arrow.png" />
+          Shop Now
         </button>
-        <!-- @TODO: Создать стрелку псевдоклассом -->
       </div>
     </div>
   </header>
@@ -159,7 +157,7 @@
           </li>
         </ul>
         <button class="btn about__btn--yellow">
-          About Organic Smoothie <img src="icons/arrow.png" />
+          About Organic Smoothie
         </button>
       </div>
     </div>
@@ -171,7 +169,7 @@
       <h4 class="products__descr">Dark Chocolate Smoothie</h4>
       <span class="products__subtitle">100 ml</span>
       <button class="btn products__btn--white">
-        Buy <img src="icons/arrowwh.png" />
+        Buy
       </button>
     </div>
     <div class="products__item products__item--vegan">
@@ -179,7 +177,7 @@
       <h4 class="products__descr">Vegan Lettuce Smoothie</h4>
       <span class="products__subtitle">100 ml</span>
       <button class="btn products__btn--white">
-        Buy <img src="icons/arrowwh.png" />
+        Buy
       </button>
     </div>
     <div class="products__item products__item--lemon">
@@ -187,7 +185,7 @@
       <h4 class="products__descr">Lemon Ginger Smoothie</h4>
       <span class="products__subtitle">100 ml</span>
       <button class="btn products__btn--white">
-        Buy <img src="icons/arrowwh.png" />
+        Buy
       </button>
     </div>
     <div class="products__item products__item--turmeric">
@@ -195,7 +193,7 @@
       <h4 class="products__descr">Turmeric Garlic Smoothie</h4>
       <span class="products__subtitle">100 ml</span>
       <button class="btn products__btn--white">
-        Buy <img src="icons/arrowwh.png" />
+        Buy
       </button>
     </div>
   </section>
@@ -213,7 +211,7 @@
           </p>
         </div>
         <button class="btn story__btn--green-bg">
-          Who we are <img src="icons/arrow.png" />
+          Who we are
         </button>
       </div>
       <div class="story__cocktail-image-wrapper">
@@ -234,16 +232,9 @@
       <img src="images/girl.png" alt="" />
     </div>
     <div class="feedback__arrows">
-      <a class="feedback__arrows--left"></a>
-      <a class="feedback__arrows--right"></a>
+      <a src="#"><img class="feedback__arrow--left" src="icons/Arrow.png" alt=""></a>
+      <a src="#"><img class="feedback__arrow--right" src="icons/Arrow.png" alt=""></a>
     </div>
-    <!-- <button>
-        <a href="#"><img src="icons/Arrow.png" alt="" /></a>
-      </button>   @TODO: 
-      <button>
-        <a href="#"><img src="icons/Arrow.png" alt="" /></a>
-      </button>
-    </div> -->
   </section>
 
   <section class="blog">
@@ -330,18 +321,20 @@
             <input class="subscribebox" type="email" name="EMAIL" placeholder="Subscribe to our newsletter">
           </form>
           <!-- Нагуглить как позиционировать имг в баттонах -->
-          <div class="footer__socials">
-            <img src="footer__follow-img" alt="">
+          <div class="footer__followbox">
             <span class="footer__follow-text">Follow us</span>
-            <a href="#" class="footer__socials-link socials__item"><img src="icons/social/Facebook.svg"
-                alt="Logo Facebook" /></a>
-            <a href="#" class="footer__socials-link socials__item"><img src="icons/social/Pinterest.svg"
-                alt="Logo Pinterest" /></a>
-            <a href="#" class="footer__socials-link socials__item"><img src="icons/social/Instagram.svg"
-                alt="Logo instagram" /></a>
+            <div class="footer__socials">
+              <a href="#" class="footer__socials-link socials__item"><img src="icons/social/Facebook.svg"
+                  alt="Logo Facebook" /></a>
+              <a href="#" class="footer__socials-link socials__item"><img src="icons/social/Pinterest.svg"
+                  alt="Logo Pinterest" /></a>
+              <a href="#" class="footer__socials-link socials__item"><img src="icons/social/Instagram.svg"
+                  alt="Logo instagram" /></a>
+            </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
     <div class="footer-end">&copy;2020. All rights Reserved.</div>
   </footer>

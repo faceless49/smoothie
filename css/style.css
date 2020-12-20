@@ -65,8 +65,24 @@
   align-items: center;
   list-style: none;
 }
+.personal__icon-cart {
+  position: relative;
+  text-decoration: none;
+}
+.personal__icon-cart:after {
+  content: "3";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  font-size: 10px;
+  color: #000000;
+}
 .personal__list-item {
-  padding-right: 45px;
+  margin-right: 45px;
 }
 
 .socials {
@@ -105,17 +121,22 @@
 .btn {
   width: 280px;
   height: 70px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 50px;
+  position: relative;
+  border-radius: 30px;
   font-size: 24px;
-  font-weight: 400;
   border: none;
 }
 .header__btn--green-bg {
+  text-align: left;
+  padding: 20px 39px 20px 39px;
+  border-radius: 35px;
   background-color: #0aa466;
   color: #ffffff;
+}
+.header__btn--green-bg:after {
+  content: url(../icons/arrow.png);
+  position: absolute;
+  right: 40px;
 }
 
 .header-bottom {
@@ -230,11 +251,18 @@
   width: 380px;
   height: 60px;
   margin-top: 50px;
+   padding: 18px 98px 15px 25px; 
+  text-align: center;
   font-size: 21px;
   font-weight: 800;
-  border: 3px solid #f8b231;
+  border: 2px solid #f8b231;
   background-color: transparent;
   color: #ffffff;
+}
+.about__btn--yellow:after {
+  content: url(../icons/arrow.png);
+  position: absolute;
+  right: 40px;
 }
 
 .products {
@@ -277,20 +305,38 @@
   background: url(../images/turmeric-holder.png) center center/cover no-repeat;
 }
 .products__btn--white {
-  width: 204px;
+  width: 205px;
   height: 60px;
+  position: relative;
   margin: 0 auto;
-  border: 3px solid #ffffff;
-  text-align: center;
+  padding: 17px 130px 16px 34px;
+  font-size: 21px;
+  font-weight: 800;
+  border: 2px solid #ffffff;
   background-color: transparent;
   color: #ffffff;
-  
+}
+.products__btn--white:after {
+  content: url(../icons/Arrowwhite.svg);
+  position: absolute;
+  right: 36px;
+  bottom: 14px;
 }
 .story__btn--green-bg {
+  width: 301px;
+  height: 60px;
+  position: relative;
+  padding: 20px 40px 20px 30px;
+  text-align: left;
   font-size: 21px;
-  font-weight: 700;
+  font-weight: 800;
   background-color: #0aa466;
   color: #ffffff;
+}
+.story__btn--green-bg:after {
+  content: url(../icons/arrow.png);
+  position: absolute;
+  right: 40px;
 }
 
 .story-inner {
@@ -370,6 +416,14 @@
   text-transform: uppercase;
   color: #f2612d;
 }
+.feedback__arrows {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+}
+.feedback__arrow--left {
+  transform: rotate(180deg);
+}
 
 .blog {
   padding: 100px 360px 0 360px;
@@ -401,14 +455,19 @@
   border: 3px solid violet;
 }
 .blog__descr {
-  padding-left: 65px;
+  margin-left: 65px;
   font-size: 18px;
-  font-weight: 400;
   line-height: 35px;
   border: 3px solid #224ee0;
 }
 .blog__descr-more {
+  position: relative;
   font-weight: 800;
+}
+.blog__descr-more:after {
+  content: url(../icons/Arrow.png);
+  position: absolute;
+  margin-left: 10px;
 }
 .blog__title {
   border: 3px solid #224ee0;
@@ -444,7 +503,6 @@
 .instagram__img {
   position: relative;
   width: 20%;
-  
 }
 .instagram__img::after {
   content: url(../icons/social/Instagram.svg); /* @FIXME: Почему её нет? */
@@ -517,7 +575,7 @@
   padding-left: 70px;
   background: #ffffff;
   color: #6d450c;
-  border-radius: 50px;
+  border-radius: 30px;
   font-size: 24px;
   font-weight: 400;
   border: none;
@@ -542,18 +600,37 @@
   top: 50%;
   transform: translateY(-50%);
 }
-
-.footer__socials {
+.footer__followbox {
+  margin-top: 25px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  border: 3px solid red;
+}
+.footer__socials {
+
   border: 3px solid blue;
 }
+
 .footer__follow-text {
+  position: relative;
+  margin-right: 45px;
   text-transform: uppercase;
   font-weight: 800;
   color: #6d450c;
+  border: 3px solid blue;
+}
+.footer__follow-text:before {
+  content: url(../images/Arrowfollow.svg);
+  position: absolute;
+  bottom: -50%;
+  left: -70px;
+  border: 3px solid blue;
+}
+
+.footer__socials-link {
+  margin-right: 25px;
+  border: 3px solid blue;
 }
 .footer-end {
   min-height: 60px;
@@ -564,4 +641,13 @@
   font-size: 13px;
   color: #ffffff;
   border: 3px solid red;
+}
+
+
+/** Здесь будет проба Readmore **/
+.read-more-text {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
 }
