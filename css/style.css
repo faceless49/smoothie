@@ -134,7 +134,7 @@
   color: #ffffff;
 }
 .header__btn--green-bg:after {
-  content: url(../icons/arrow.png);
+  content: url(../icons/arrow.png); @FIXME:
   position: absolute;
   right: 40px;
 }
@@ -265,7 +265,7 @@
 }
 .about__btn--yellow:after {
   content: url(../icons/arrow.png);
-  position: absolute;
+  position: absolute; @FIXME:
   right: 40px;
 }
 
@@ -345,7 +345,7 @@
 }
 .story__btn--green-bg:after {
   content: url(../icons/arrow.png);
-  position: absolute;
+  position: absolute; @FIXME: peredelat;
   right: 40px;
 }
 .story__btn--green-bg:active {
@@ -363,7 +363,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-60%);
-  border: 3px solid #224ee0;
+  border: 3px solid #224ee0; @FIXME: peredelat';
 }
 .story__somestory {
   border: 3px solid #224ee0;
@@ -636,7 +636,7 @@
   border: 3px solid blue;
 }
 .footer__follow-text:before {
-  content: url(../images/Arrowfollow.svg);
+  content: url(../images/Arrowfollow.svg); @FIXME:
   position: absolute;
   bottom: -50%;
   left: -70px;
