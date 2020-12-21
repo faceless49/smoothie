@@ -142,6 +142,7 @@
 	background-color: #2bc286;
 }
 
+
 .header-bottom {
   display: flex;
   justify-content: center;
@@ -347,7 +348,9 @@
   position: absolute;
   right: 40px;
 }
-
+.story__btn--green-bg:active {
+  background-color: #2bc286;
+}
 .story-inner {
   padding: 120px 300px 160px 200px;
   display: flex;
