@@ -229,7 +229,7 @@
   list-style: none;
   border: 3px solid red;
 }
-.advantages__list li:before {
+.advantages__list li:before { /* @FIXME: marker */
   content: "";
   display: inline-block;
   height: 18px;
