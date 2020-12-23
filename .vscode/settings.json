@@ -1,5 +1,11 @@
 {
     "cSpell.words": [
         "secondaryclr"
+    ],
+    "cSpell.ignoreWords": [
+        "arrowwhite",
+        "flexbetween",
+        "flexcenter",
+        "primaryclr"
     ]
 }

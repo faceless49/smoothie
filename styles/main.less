@@ -1,7 +1,7 @@
 // out: ./main.css, compress: true, sourceMap: true
-@import "./less/_variables.less";
-@import "./less/_mixins.less";
-@import "./blocks/_button.less";
+@import "less/_variables.less";
+@import "less/_mixins.less";
+
 
 
 * {
@@ -9,14 +9,6 @@
   padding: 0;
   margin: 0;
   font-size: 10px;
-}
-
-
-
-.header-bottom {
-  display: flex;
-  justify-content: center;
-  margin-top: 105px;
 }
 
 .smoothies {
@@ -509,4 +501,5 @@
 
 /* Style of blocks */
 
+@import "./blocks/_button.less";
 @import "./blocks/_header.less";

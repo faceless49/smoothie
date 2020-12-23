@@ -23,10 +23,11 @@
       position: absolute;
       right: 40px;
       bottom: 25px;
-    }
-      &:hover:after {
-        padding-right: 15px;
       }
+      &:hover:after {
+          padding-right: 15px;
+      }
+    }
   &--yellow {
     width: 380px;
     height: 6rem;
@@ -38,7 +39,8 @@
     border: 2px solid #f8b231;
     background-color: transparent;
     color: #ffffff;
-    :after {
+
+    &:after {
       content: "";
       background-image: url(../icons/arrow.png);
       background-repeat: no-repeat;
@@ -48,9 +50,12 @@
       right: 40px;
       bottom: 20px;
     }
+
     &:hover:after {
       padding-right: 15px;
     }
+  }
+
   &--white {
     width: 205px;
     height: 60px;
@@ -62,6 +67,7 @@
     border: 2px solid #ffffff;
     background-color: transparent;
     color: #ffffff;
+
     &:after {
       content: "";
       background-image: url(../icons/Arrowwhite.svg);
@@ -72,7 +78,9 @@
       right: 30px;
       bottom: 18px;
     }
+    
     &:hover:after {
       padding-right: 10px;
     }
   }
+}
