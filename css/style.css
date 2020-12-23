@@ -134,19 +134,18 @@
   color: #ffffff;
 }
 .header__btn--green-bg:after {
-  content: '';
+  content: "";
   background-image: url(../icons/arrow.png);
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   height: 16px;
   width: 30px;
   position: absolute;
-  right: 40px; 
+  right: 40px;
   bottom: 25px;
 }
 .header__btn--green-bg:hover:after {
-    padding-right: 15px;
+  padding-right: 15px;
 }
-
 
 .header-bottom {
   display: flex;
@@ -257,7 +256,7 @@
   position: relative;
 }
 .about__title-grn:after {
-  content: '';
+  content: "";
   background-image: url(../icons/Line.svg);
   background-repeat: no-repeat;
   position: absolute;
@@ -279,8 +278,8 @@
   color: #ffffff;
 }
 .about__btn--yellow:after {
-  content: '';
-  background-image: url(../icons/arrow.png); 
+  content: "";
+  background-image: url(../icons/arrow.png);
   background-repeat: no-repeat;
   height: 15px;
   width: 30px;
@@ -344,7 +343,7 @@
   color: #ffffff;
 }
 .products__btn--white:after {
-  content: '';
+  content: "";
   background-image: url(../icons/Arrowwhite.svg);
   background-repeat: no-repeat;
   position: absolute;
@@ -373,9 +372,9 @@
   color: #ffffff;
 }
 .story__btn--green-bg:after {
-  content: '';
+  content: "";
   background-image: url(../icons/arrow.png);
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   height: 15px;
   width: 30px;
   position: absolute;
@@ -510,7 +509,7 @@
   font-weight: 800;
 }
 .blog__descr-more:after {
-  content: '';
+  content: "";
   background-image: url(../images/smallarrow.png);
   position: absolute;
   height: 10px;
@@ -545,45 +544,14 @@
 }
 .instagram__cocktails-images {
   display: flex;
-  flex: 1;
-  flex-basis: 20%;
   border: 3px solid red;
 }
-.instagram__img-wrapper {
-  flex: 1;
-  flex-basis: 20%;
-  object-fit: cover;
-}
-.instagram__img {
-  flex: 1;
-  flex-basis: 20%;
- object-fit: cover;
-}
-.srawberry {
-  background-image: url(../images/instascreen/insta1.png) center center/cover no-repeat;
-  background-repeat: no-repeat;
-}
-.banana {
-  background-image: url(../images/instascreen/insta2.png) 
-  background-repeat: no-repeat;
+.instagram__image-wrapper {
+  width: 20%;
+  min-width: 230px;
 }
 
-.pinnapple {
-  background-image: url(../images/instascreen/insta3.png);
-  background-repeat: no-repeat;
-}
-
-.bottle {
-  background-image: url(../images/instascreen/insta4.png);
-  background-repeat: no-repeat;
-}
-
-.cocktail {
-  background-image: url(../images/instascreen/insta5.png);
-  background-repeat: no-repeat;
-}
-
-.instagram__img:hover {
+.instagram__image:hover {
   transform: scale(1.2);
   z-index: 2;
   transition: all 0.7s;
@@ -697,7 +665,7 @@
   border: 3px solid blue;
 }
 .footer__follow-text:before {
-  content: '';
+  content: "";
   background-image: url(../images/Arrowfollow.svg);
   position: absolute;
   height: 43px;

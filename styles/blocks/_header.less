@@ -1,0 +1,115 @@
+// main: ../main.less
+
+.header {
+    border: 6px solid #e04722;
+    height: 100vh;
+    background: url("../images/header-bg.png") center center/cover no-repeat;
+  }
+  
+  .header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 69px 100px 0 100px;
+    border: 3px solid #ae3e76;
+  }
+  
+  .menu {
+    border: 3px solid #224ee0;
+  }
+  .menu__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .menu__link {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .menu__item {
+    margin-right: 35px;
+  }
+  .menu__item:last-child {
+    margin-right: 0;
+  }
+  
+  .logo {
+    width: 211px;
+    height: 70px;
+    border: 3px solid #224ee0;
+  }
+  .logo__link {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .personal {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    border: 3px solid #224ee0;
+  }
+  .personal__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  .personal__icon-cart {
+    position: relative;
+    text-decoration: none;
+  }
+  .personal__icon-cart:after {
+    content: "3";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    font-size: 10px;
+    color: #000000;
+  }
+  .personal__list-item {
+    margin-right: 45px;
+  }
+  
+  .socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__socials::before {
+    content: "";
+    margin-right: 40px;
+    width: 47px;
+    height: 2px;
+    background-color: #ffd68f;
+  }
+  
+  .header__socials .socials__item {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 100%;
+  }
+  .socials__item:last-child {
+    margin-right: 0;
+  }
+  .header__bottom-inner {
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    border: 3px solid #ae3e76;
+  }

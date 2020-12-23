@@ -1,0 +1,78 @@
+// main: ../main.less
+
+.btn {
+  width: 280px;
+  height: 6rem;
+  position: relative;
+  border-radius: @border-radius;
+  font-size: @base-font-size * 2.4rem;
+  border: none;
+
+  &--green-bg {
+    text-align: left;
+    padding: 15px 39px 30px 39px;
+    border-radius: 35px;
+    background-color: @secondaryclr;
+    color: #ffffff;
+      &:after {
+      content: "";
+      background-image: url(../icons/arrow.png);
+      background-repeat: no-repeat;
+      height: 16px;
+      width: 30px;
+      position: absolute;
+      right: 40px;
+      bottom: 25px;
+    }
+      &:hover:after {
+        padding-right: 15px;
+      }
+  &--yellow {
+    width: 380px;
+    height: 6rem;
+    margin-top: 50px;
+    padding: 15px 98px 15px 25px;
+    text-align: center;
+    font-size: @base-font-size * 2.1rem;
+    font-weight: 800;
+    border: 2px solid #f8b231;
+    background-color: transparent;
+    color: #ffffff;
+    :after {
+      content: "";
+      background-image: url(../icons/arrow.png);
+      background-repeat: no-repeat;
+      height: 15px;
+      width: 30px;
+      position: absolute;
+      right: 40px;
+      bottom: 20px;
+    }
+    &:hover:after {
+      padding-right: 15px;
+    }
+  &--white {
+    width: 205px;
+    height: 60px;
+    position: relative;
+    margin: 0 auto;
+    padding: 17px 130px 16px 34px;
+    font-size: 21px;
+    font-weight: 800;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    &:after {
+      content: "";
+      background-image: url(../icons/Arrowwhite.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 30px;
+      height: 16px;
+      right: 30px;
+      bottom: 18px;
+    }
+    &:hover:after {
+      padding-right: 10px;
+    }
+  }
