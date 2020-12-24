@@ -1,0 +1,153 @@
+// main: ./../main.less
+
+.footer {
+  &__wrapper {
+    margin-top: 10px;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    background: url("../images/Holder-ft-bg.png") center center/cover no-repeat;
+    border: 3px solid red;
+  }
+  
+  &__blocks-wrapper {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-self: center;
+    border: 3px solid blue;
+  }
+
+  &__logo {
+    align-self: center;
+    margin-left: 100px;
+    border: 3px solid blue;
+  }
+
+  &-title {
+    margin-bottom: 40px;
+    color: #ffffff;
+    border: 3px solid violet;
+  }
+
+  &__payment-title {
+    margin-bottom: 0;
+  }
+
+  &__payment-list {
+    width: 265px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 3px solid blue;
+  }
+
+  &__payment-link {
+    margin-right: 20px;
+    margin: 20px 20px 0 0;
+    border: 3px solid blue;
+  }
+
+  &__followbox {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid red;
+  }
+
+  &__socials {
+    border: 3px solid blue;
+  }
+
+  &__follow-text {
+    position: relative;
+    margin-right: 45px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #6d450c;
+    border: 3px solid blue;
+  }
+
+  &__follow-text {
+    &:before {
+      content: "";
+      background-image: url(../images/Arrowfollow.svg);
+      position: absolute;
+      height: 43px;
+      width: 48px;
+      bottom: -5px;
+      left: -60px;
+      border: 3px solid blue;
+    }
+  }
+
+  &__socials-link {
+    margin-right: 25px;
+    border: 3px solid blue;
+  }
+
+  &-end {
+    min-height: 60px;
+    background: url(../images/footer-end-bg.png) center center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: #ffffff;
+    border: 3px solid red;
+  }
+
+  .information {
+
+    &__item {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      border: 3px solid blue;
+    }
+
+    &__links {
+      padding-bottom: 20px;
+      text-decoration: none;
+      color: #6d450c;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+
+  .subscribebox {
+    height: 60px;
+    width: 495px;
+    padding-left: 70px;
+    background: #ffffff;
+    color: #6d450c;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: 400;
+    border: none;
+    position: relative;
+    border: 3px solid red;
+
+    &::-webkit-input-placeholder {
+      color: #6d450c;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 60px;
+    }
+  }
+
+  .emailbox {
+    position: relative;
+  }
+  
+  .icon-email {
+    position: absolute;
+    z-index: 1;
+    font-size: 35px;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
