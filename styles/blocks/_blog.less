@@ -1,0 +1,57 @@
+// main: ./../main.less
+
+.blog {
+  padding: 100px 360px 0 360px;
+
+  &__cocktails-image {
+    max-width: 1200px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+  }
+  &__subtitle--upper-red {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 40px;
+    color: #f2612d;
+    border: 3px solid #224ee0;
+  }
+  &__feedback {
+    &:before {
+      content: "";
+      width: 650px;
+      height: 12px;
+      display: block;
+      background-color: #f8ac38;
+      border: 3px solid violet;
+    }
+  }
+  &__descr {
+    margin-left: 65px;
+    font-size: 18px;
+    line-height: 35px;
+    border: 3px solid #224ee0;
+    &-more {
+      position: relative;
+      font-weight: 800;
+      &:after {
+        content: "";
+        background-image: url(../images/smallarrow.png);
+        position: absolute;
+        height: 10px;
+        width: 18px;
+        right: -30px;
+        top: 7px;
+      }
+    }
+  }
+  &__title {
+    border: 3px solid #224ee0;
+  }
+  &__time {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+    border: 3px solid red;
+  }
+}
