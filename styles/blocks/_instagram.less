@@ -1,0 +1,37 @@
+// main: ./../main.less
+
+.instagram {
+  border: 3px solid red;
+
+  &__title-wrapper {
+    margin: 200px 0 50px 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  &__title {
+    margin-left: 15px;
+    font-size: 24px;
+    font-weight: 800;
+    color: #0aa566;
+    border: 3px solid red;
+  }
+
+  &__cocktails-images {
+    display: flex;
+    border: 3px solid red;
+  }
+
+  &__image-wrapper {
+    width: 20%;
+    min-width: 230px;
+  }
+  &__image {
+    &:hover {
+      transform: scale(1.2);
+      z-index: 2;
+      transition: all 0.7s;
+    }
+  }
+}
