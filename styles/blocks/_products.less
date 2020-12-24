@@ -1,0 +1,51 @@
+// main: ./../main.less
+
+.products {
+  height: 720px;
+  display: flex;
+  text-align: center;
+  color: #ffffff;
+  border: 3px solid #ae3e76;
+
+  &__descr {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 34px;
+    border: 3px solid red;
+  }
+
+  &__subtitle {
+    display: block;
+    font-size: 21px;
+    font-weight: 400;
+    font-style: italic;
+    margin: 16px 0 64px 0;
+    border: 3px solid red;
+  }
+  &__item {
+    padding: 125px 0 80px 0;
+    flex: 0 1 25%;
+    border: 3px solid #224ee0;
+    &--chocolate {
+      background: url(../images/darkchocolate-holder.png) center center/cover
+        no-repeat;
+    }
+    &--vegan {
+      background: url(../images/veganlett-holder.png) center center/cover
+        no-repeat;
+    }
+    &--lemon {
+      background: url(../images/lemongin-holder.png) center center/cover
+        no-repeat;
+    }
+    &--turmeric {
+      background: url(../images/turmeric-holder.png) center center/cover
+        no-repeat;
+    }
+    &:hover {
+      transform: scale(1.2);
+      z-index: 1;
+      transition: all 0.7s;
+    }
+  }
+}
