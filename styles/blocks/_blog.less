@@ -1,8 +1,14 @@
 // main: ./../main.less
 
 .blog {
-  padding: 100px 360px 0 360px;
-
+  &__wrapper {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #224ee0;
+  }
   &__cocktails-image {
     max-width: 1200px;
     margin-top: 50px;
@@ -10,7 +16,7 @@
     align-items: center;
   }
   &__subtitle--upper-red {
-    font-size: 30px;
+    font-size: @base-font-size * 3rem;
     font-weight: 800;
     line-height: 40px;
     color: #f2612d;
@@ -25,11 +31,16 @@
       background-color: #f8ac38;
       border: 3px solid violet;
     }
+    .feedback-wrapper {
+      margin-left: 60px;
+    }
   }
   &__descr {
+    max-width: 475px;
     margin-left: 65px;
-    font-size: 18px;
-    line-height: 35px;
+    text-align: left;
+    font-size: @base-font-size * 1.8rem;
+    line-height: 2;
     border: 3px solid #224ee0;
     &-more {
       position: relative;
@@ -46,11 +57,13 @@
     }
   }
   &__title {
+    margin-top: 115px;
+    font-size: @base-font-size * 3rem;
+    padding-left: 360px;
     border: 3px solid #224ee0;
   }
   &__time {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: @base-font-size *1.6rem;
     line-height: 35px;
     border: 3px solid red;
   }

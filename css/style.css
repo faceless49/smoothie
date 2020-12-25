@@ -89,6 +89,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  &.socials__item  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .header__socials::before {
   content: "";

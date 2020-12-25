@@ -7,18 +7,20 @@
   text-align: center;
   background: url(../images/sarah-holder.png) center center/cover no-repeat;
   border: 3px solid red;
-
+  &__dots {
+    position: absolute;
+    top: -10%;
+    right: 0;
+    z-index: 2;
+  }
   &__somequote {
     margin-top: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-style: Italic;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 35px;
     position: relative;
     z-index: 1;
+    color: #ffffff;
     border: 3px solid #224ee0;
   }
 
@@ -29,19 +31,25 @@
       left: 50%;
       transform: translate(-70%, 45%);
       color: #59230d;
-      font-size: 200px;
+      font-size: @base-font-size * 20rem;
       font-weight: 800;
       border: 3px solid red;
     }
     &--upper-orange {
+      font-size: @base-font-size * 5rem;
+      font-weight: 800;
       text-transform: uppercase;
       color: #f2612d;
     }
   }
-
+  &__quote {
+    font-size: @base-font-size * 1.8rem;
+    line-height: @base-font-size * 3.5rem;
+  }
   &__quote-auth {
-    line-height: 45px;
     display: block;
+    font-size: @base-font-size * 1.8rem;
+    line-height: 45px;
     color: #f8b231;
     border: 3px solid #224ee0;
   }
@@ -52,7 +60,7 @@
     border: 3px solid #224ee0;
   }
 
-  &__arrows {
+  &__arrow {
     transform: translateY(220px);
     &--left {
       transform: rotate(180deg);

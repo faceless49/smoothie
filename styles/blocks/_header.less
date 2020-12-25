@@ -13,6 +13,16 @@
     padding: 69px 100px 0 100px;
     border: 3px solid #ae3e76;
   }
+  .socials__item {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 100%;
+  }
   &__socials:before {
     content: "";
     margin-right: 40px;
@@ -34,6 +44,7 @@
       margin-right: 0;
     }
   }
+  
   &__bottom-inner {
     margin-top: 110px;
     display: flex;
@@ -46,40 +57,41 @@
   border: 3px solid #224ee0;
 
   &__list {
-  display: flex;
-  align-items: center;
-  list-style: none;
+    display: flex;
+    align-items: center;
+    list-style: none;
   }
 
   &__link {
-  text-decoration: none;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
   }
 
   &__item {
-  margin-right: 35px;
-  
-  &:last-child {
-  margin-right: 0;
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
-  .logo {
+.logo {
   width: 211px;
   height: 70px;
   border: 3px solid #224ee0;
 
   &__link {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
-  
-  .personal {
+
+.personal {
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -93,29 +105,28 @@
   }
 
   &__icon-cart {
-  position: relative;
-  text-decoration: none;
-  &:after {
-    content: "3";
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    text-align: center;
-    line-height: 18px;
-    border-radius: 100%;
-    background-color: #ffffff;
-    font-size: 10px;
-    color: #000000;
+    position: relative;
+    text-decoration: none;
+    &:after {
+      content: "3";
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      text-align: center;
+      line-height: 18px;
+      border-radius: 100%;
+      background-color: #ffffff;
+      font-size: 10px;
+      color: #000000;
+    }
   }
-}
   &__list-item {
     margin-right: 45px;
   }
 }
 
-  .socials {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

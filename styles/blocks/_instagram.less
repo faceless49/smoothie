@@ -5,14 +5,12 @@
 
   &__title-wrapper {
     margin: 200px 0 50px 15px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    .flexcenter
   }
 
   &__title {
     margin-left: 15px;
-    font-size: 24px;
+    font-size: @base-font-size * 2.4rem;
     font-weight: 800;
     color: #0aa566;
     border: 3px solid red;
@@ -28,10 +26,22 @@
     min-width: 230px;
   }
   &__image {
+    position: relative;
     &:hover {
       transform: scale(1.2);
       z-index: 2;
       transition: all 0.7s;
     }
+    &:after {
+        content: "";
+        background-image: url("../../icons/instagramwhite.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 60px;
+        width: 35px;
+        z-index: 999999;
+        bottom: -20px;
+        right: 20px;
+      }
+    }
   }
-}
