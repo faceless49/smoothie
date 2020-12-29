@@ -23,6 +23,9 @@
     align-self: center;
     margin-left: 100px;
     border: 3px solid blue;
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
 
   &-title {
@@ -31,6 +34,10 @@
     margin-bottom: 40px;
     color: #ffffff;
     border: 3px solid violet;
+    @media (max-width: 991px) {
+      font-size: 1.9rem;
+      margin-bottom: 1rem;
+    }
   }
 
   &__payment-title {
@@ -38,23 +45,30 @@
   }
 
   &__payment-list {
-    width: 265px;
+    width: 26.5rem;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     border: 3px solid blue;
+    @media (max-width: 991px) {
+      width: 23rem;
+    }
   }
 
   &__payment-link {
-    margin-right: 20px;
     margin: 20px 20px 0 0;
     border: 3px solid blue;
+    @media (max-width: 991px) {
+      margin: 1rem 0.5rem 0 0;
+    }
   }
 
   &__followbox {
     margin-top: 25px;
-    .flexcenter;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     border: 3px solid red;
   }
 
@@ -70,6 +84,9 @@
     font-weight: 800;
     color: #6d450c;
     border: 3px solid blue;
+    @media screen and (max-width: 1199px) {
+      margin-right: 1.5rem;
+    }
   }
 
   &__follow-text {
@@ -82,12 +99,19 @@
       bottom: -5px;
       left: -60px;
       border: 3px solid blue;
+
     }
   }
 
   &__socials-link {
     margin-right: 25px;
     border: 3px solid blue;
+    @media screen and (max-width: 1199px) {
+      margin-right: 1rem;
+    }
+    &:last-child {
+      margin-right: none;
+    }
   }
 
   &-end {
@@ -113,10 +137,13 @@
       color: #6d450c;
       font-size: @base-font-size * 1.8rem;
       font-weight: 700;
+      @media (max-width: 991px) {
+        padding-bottom: 1rem;
+      }
     }
   }
 
-  .subscribebox {
+  .footer__subscribebox {
     height: 60px;
     width: 495px;
     padding-left: 70px;
@@ -127,6 +154,10 @@
     border: none;
     position: relative;
     border: 3px solid red;
+    @media screen and (max-width: 1199px) {
+      width: 26rem;
+      height: 4.5rem;
+    }
 
     &::-webkit-input-placeholder {
       color: #6d450c;

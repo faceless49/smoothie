@@ -6,11 +6,11 @@
   font-size: @base-font-size * 2.4rem;
   border: none;
   &--green-bg {
-    width: 280px; 
+    width: 28rem; 
     height: 6rem;
     display: block;
     margin: 0 auto;
-    margin-top: 110px;
+    margin-top: 11rem;
     text-align: left;
     padding: 15px 39px 30px 39px;
     border-radius: @base-font-size * 3.5;
@@ -25,15 +25,23 @@
       position: absolute;
       right: 40px;
       bottom: 22px;
+      @media (max-width: 1199px) {
+        display: none;
+      }
     }
     &:hover:after {
       padding-right: 15px;
     }
+    @media (max-width: 1199px) {
+      width: 20rem;
+    }
+    
   }
+  
   &--yellow {
-    width: 380px;
+    width: 38rem;
     height: 6rem;
-    margin-top: 50px;
+    margin-top: 5rem;
     padding: 15px 98px 15px 25px;
     text-align: center;
     font-size: @base-font-size * 2.1rem;
@@ -41,6 +49,12 @@
     border: 2px solid #f8b231;
     background-color: transparent;
     color: #ffffff;
+    @media (max-width: 1200px) {
+      width: 25rem;
+      margin-top: 2.5rem;
+      padding: 0;
+      font-size: 1.7rem;
+    }
 
     &:after {
       content: "";
@@ -51,6 +65,9 @@
       position: absolute;
       right: 40px;
       bottom: 20px;
+      @media (max-width: 1200px) {
+        display: none;
+      }
     }
 
     &:hover:after {
@@ -69,6 +86,12 @@
     border: 2px solid #ffffff;
     background-color: transparent;
     color: #ffffff;
+    @media (max-width: 991px) {
+      width: 15rem;
+      padding: 0;
+      font-size: 1.7rem;
+      padding-bottom: 0;
+    }
 
     &:after {
       content: "";
@@ -79,10 +102,27 @@
       height: 16px;
       right: 30px;
       bottom: 18px;
+      @media (max-width: 991px) {
+        display: none;
+      }
     }
 
     &:hover:after {
       padding-right: 10px;
+    }
+  }
+  &--green-story {
+    height: 6rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 11rem;
+    text-align: left;
+    padding-left: 3rem;
+    border-radius: @base-font-size * 3.5;
+    background-color: @secondaryclr;
+    color: #ffffff;
+    @media (max-width: 991px) {
+      width: 20rem; 
     }
   }
 }

@@ -12,6 +12,9 @@
     top: -10%;
     right: 0;
     z-index: 2;
+    @media (max-width: 991px) {
+      display: none;
+    }
   }
   &__somequote {
     margin-top: 120px;
@@ -25,6 +28,9 @@
   }
 
   &__title {
+    @media (max-width: 991px) {
+      font-size: 3rem;
+    }
     &:after {
       content: "Sarah A";
       position: absolute;
@@ -34,9 +40,17 @@
       font-size: @base-font-size * 20rem;
       font-weight: 800;
       border: 3px solid red;
+      @media (max-width: 1199px) {
+        font-size: 12rem;
+        transform: translate(-78%, 60%);
+      }
+      @media (max-width: 991px) {
+        font-size: 7.5rem;
+        transform: translate(-95%, 140%);
+      }
     }
     &--upper-orange {
-      font-size: @base-font-size * 5rem;
+      font-size: 3rem;
       font-weight: 800;
       text-transform: uppercase;
       color: #f2612d;

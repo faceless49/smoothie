@@ -3,7 +3,7 @@
 .about {
   &__inner {
     position: relative;
-    max-height: 800px;
+    max-height: 80rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -14,30 +14,45 @@
   &__welcome-img {
     position: relative;
     display: block;
-    margin-top: 200px;
+    margin-top: 20rem;
     z-index: 1;
     border: 3px solid #224ee0;
+    @media (max-width: 1200px) {
+      width: 55%;
+      margin-top: 2rem;
+    }
   }
 
   &__title {
     font-size: @base-font-size * 5.5rem;
     color: #ffffff;
     border: 3px solid red;
+    @media (max-width: 1200px) {
+      font-size: 2.5rem;
+    }
 
     &-grn {
       font-size: @base-font-size * 5.5rem;
       color: #cae941;
       position: relative;
+      @media (max-width: 1200px) {
+        font-size: 2.5rem;
+      }
 
       &:after {
         content: "";
         background-image: url(../icons/Line.svg);
         background-repeat: no-repeat;
         position: absolute;
-        width: 450px;
-        height: 10px;
-        top: 60px;
-        right: -30px;
+        width: 45rem;
+        height: 1rem;
+        top: 6rem;
+        right: -3rem;
+        @media (max-width: 1200px) {
+          top: 2.5rem;
+          right: -5.3rem;
+          width: 25rem;
+        }
       }
     }
   }
@@ -48,7 +63,7 @@
   border: 3px solid #224ee0;
 
   &__list {
-    margin-left: 25px;
+    margin-left: 2.5rem;
     font-weight: 400;
     color: #ffffff;
     list-style-image: url(../icons/1.svg);
@@ -59,9 +74,16 @@
     padding-left: 20px;
     margin-top: 20px;
     font-size: @base-font-size * 2.1rem;
+    @media (max-width: 1200px) {
+      font-size: 1.5rem;
+      padding-left: 1rem;
+    }
     &--strong {
       font-size: @base-font-size * 2.1rem;
       font-weight: 800;
+      @media (max-width: 1200px) {
+        font-size: 1.6rem;
+      }
     }
   }
 }
