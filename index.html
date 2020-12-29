@@ -14,53 +14,55 @@
   <header class="header">
     <div class="header__top">
       <div class="header__top-inner">
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link" href="#">home</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">shop</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">story</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">about</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">blog</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">testimonials</a>
-            </li>
-          </ul>
-        </nav>
-        <a class="logo__link" href="#"><img class="logo" src="images/logo.png" alt="Logo" /></a>
-        <div class="personal">
-          <ul class="personal__list">
-            <li class="personal__list-item">
-              <a href="#" class="personal__icon"><img class="personal__icon" src="icons/navbar/Search-icon.svg"
-                  alt="" /></a>
-            </li>
-            <li class="personal__list-item">
-              <a href="#" class="personal__icon"><img class="personal__icon" src="icons/navbar/User-icon.svg"
-                  alt="" /></a>
-            </li>
-            <li class="personal__list-item">
-              <a href="#" class="personal__icon-cart"><img class="personal__icon" src="icons/navbar/Cart-icon.svg"
-                  alt="" /></a>
-            </li>
-          </ul>
-          <div class="socials header__socials">
-            <a href="#" class="socials__item"><img class="socials__icon" src="icons/social/Facebook.svg"
-                alt="Facebook" /></a>
-            <a href="#" class="socials__item"><img class="socials__icon" src="icons/social/Pinterest.svg"
-                alt="Pinterest" /></a>
-            <a href="#" class="socials__item"><img class="socials__icon" src="icons/social/Instagram.svg"
-                alt="Instagram" /></a>
+        <div class="header__mobile-wrap">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">shop</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">story</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">about</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">blog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">testimonials</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="personal">
+            <ul class="personal__list">
+              <li class="personal__list-item">
+                <a href="#" class="personal__icon"><img class="personal__icon" src="icons/navbar/Search-icon.svg"
+                    alt="" /></a>
+              </li>
+              <li class="personal__list-item">
+                <a href="#" class="personal__icon"><img class="personal__icon" src="icons/navbar/User-icon.svg"
+                    alt="" /></a>
+              </li>
+              <li class="personal__list-item">
+                <a href="#" class="personal__icon-cart"><img class="personal__icon" src="icons/navbar/Cart-icon.svg"
+                    alt="" /></a>
+              </li>
+            </ul>
+            <div class="socials header__socials">
+              <a href="#" class="socials__item"><img class="socials__icon" src="icons/social/Facebook.svg"
+                  alt="Facebook" /></a>
+              <a href="#" class="socials__item"><img class="socials__icon" src="icons/social/Pinterest.svg"
+                  alt="Pinterest" /></a>
+              <a href="#" class="socials__item"><img class="socials__icon" src="icons/social/Instagram.svg"
+                  alt="Instagram" /></a>
+            </div>
           </div>
         </div>
+        <a class="logo__link" href="#"><img class="logo" src="images/logo.png" alt="Logo" /></a>
       </div>
     </div>
     <div class="header-bottom">
@@ -210,7 +212,7 @@
             milkshake.
           </p>
         </div>
-        <button class="btn btn--green-bg story__btn--green-bg">
+        <button class="btn btn--green-story">
           Who we are
         </button>
       </div>
@@ -222,7 +224,7 @@
   </section>
 
   <section class="feedback">
-    <img src="icons/Dots.svg" alt="" class="feedback__dots">
+    <img class="feedback__dots" src="icons/Dots.svg" alt="" class="feedback__dots">
     <h2 class="title feedback__title">Why clients <span class="feedback__title--upper-orange">love</span> us?</h2>
     <div class="feedback__somequote">
       <div class="feedback__somequote-inner">
@@ -335,7 +337,7 @@
           <h3 class="footer-title footer__subscribe-title">Don't miss out</h3>
           <form class="emailbox">
             <span class="icon-email"></span>
-            <input class="subscribebox" type="email" name="EMAIL" placeholder="Subscribe to our newsletter">
+            <input class="footer__subscribebox" type="email" name="EMAIL" placeholder="Subscribe to our newsletter">
           </form>
           <!-- Нагуглить как позиционировать имг в баттонах -->
           <div class="footer__followbox">
