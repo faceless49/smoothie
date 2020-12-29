@@ -15,14 +15,41 @@
     @media (max-width: 1199px) {
       padding: 69px 0 0 0;
     }
-    @media (max-width: 767px) {
-      padding: 69px 0 0 0;
+    @media (max-width: 991px) {
+      display: block;
     }
   }
-  &__mobile-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  &__hamburger {
+    display: none;
+    @media (max-width: 767px) {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      top: 5rem;
+      transform: translateY(-50%);
+      width: 2rem;
+      &-item {
+        display: block;
+        height: 0.2rem;
+        width: 100%;
+        background-color: #fff;
+        margin-bottom: 0.2rem;
+        transition: 0.5s all;
+        &--active {
+          margin-bottom: -0.2rem;
+        }
+        &--active:nth-child(1) {
+          transform: translateY(3px) rotate(-45deg);
+        }
+        &--active:nth-child(2) {
+          display: none;
+        }
+        &--active:nth-child(3) {
+          transform: translateY(3px) rotate(45deg);
+        }
+      }
+
+    }
   }
   .socials__item {
     width: 3.2rem;
@@ -77,12 +104,28 @@
 }
 
 .menu {
-  border: 3px solid #224ee0;
+  border: 3px solid violet;
 
   &__list {
     display: flex;
     align-items: center;
     list-style: none;
+    @media (max-width: 767px) {
+      position: fixed;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 2rem 1.5rem;
+      background-color: rgba(0, 0, 0, .8);
+      transition: 0.7s;
+      top: 0;
+      left: -100%;
+      width: 50%;
+      height: 100vh;
+      &--active {
+        left: 0;
+      }
+    }
   }
 
   &__link {
@@ -91,6 +134,9 @@
     text-transform: uppercase;
     font-size: 1.6rem;
     font-weight: 700;
+    @media (max-width: 767px) {
+      font-size: 2.5rem;
+    }
   }
 
   &__item {
@@ -98,6 +144,10 @@
     @media (max-width: 1199px) {
       margin-right: 1.5rem;
     }
+    @media (max-width: 767px) {
+      margin-right: 0;
+    }
+
 
     &:last-child {
       margin-right: 0;
@@ -132,7 +182,9 @@
   align-content: center;
   flex-wrap: wrap;
   border: 3px solid #224ee0;
-
+  @media (max-width: 767px) {
+    display: none;
+  }
   &__list {
     display: flex;
     align-items: center;
