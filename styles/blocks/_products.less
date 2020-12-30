@@ -15,7 +15,7 @@
     font-weight: 700;
     margin-top: 34px;
     border: 3px solid red;
-    @media (max-width: 1199px) {
+    @media (max-width: 1200px) {
       font-size: 1.7rem;
     }
   }
@@ -27,7 +27,8 @@
     font-style: Italic;
     margin: 16px 0 64px 0;
     border: 3px solid red;
-    @media (max-width: 1199px) {
+    @media (max-width: 1200px) {
+      font-size: 1.6rem;
     }
     @media (max-width: 991px) {
       margin-bottom: 4rem;
@@ -38,7 +39,10 @@
     flex: 0 1 25%;
     border: 3px solid #224ee0;
     @media (max-width: 991px) {
-      padding: 4rem 0 4rem 0;
+      padding: 4rem 0;
+    }
+    @media (max-width: 575px) {
+      padding: 1rem 0;
     }
     &--chocolate {
       background: url(../images/darkchocolate-holder.png) center center/cover
@@ -60,6 +64,9 @@
       transform: scale(1.2);
       z-index: 1;
       transition: all 0.7s;
+      @media (max-width: 575px) {
+        transform: none;
+      }
     }
   }
 }

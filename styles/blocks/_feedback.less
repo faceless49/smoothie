@@ -40,7 +40,7 @@
       font-size: @base-font-size * 20rem;
       font-weight: 800;
       border: 3px solid red;
-      @media (max-width: 1199px) {
+      @media (max-width: 1200px) {
         font-size: 12rem;
         transform: translate(-78%, 60%);
       }
@@ -48,12 +48,19 @@
         font-size: 7.5rem;
         transform: translate(-95%, 140%);
       }
+      @media (max-width: 575px) {
+        font-size: 5.5rem;
+        transform: translate(-50%, 140%);
+      }
     }
     &--upper-orange {
       font-size: 3rem;
       font-weight: 800;
       text-transform: uppercase;
       color: #f2612d;
+      @media (max-width: 1200px) {
+        font-size: 4rem;
+      }
     }
   }
   &__quote {

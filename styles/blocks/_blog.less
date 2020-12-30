@@ -77,10 +77,17 @@
     font-size: @base-font-size * 3rem;
     padding-left: 36rem;
     border: 3px solid #224ee0;
+    @media (max-width: 1200px) {
+      padding: 0;
+    }
     @media (max-width: 991px) {
       padding-left: 0;
       text-align: center;
     }
+    @media (max-width: 575px) {
+      margin-top: 3.5rem;
+    }
+    
   }
   &__time {
     font-size: @base-font-size * 1.6rem;

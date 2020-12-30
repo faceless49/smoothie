@@ -10,6 +10,9 @@
     justify-content: space-around;
     align-items: center;
     border: 3px solid red;
+    @media (max-width: 1200px) {
+      padding: 0;
+    }
     @media (max-width: 991px) {
       padding: 0;
       flex-direction: column;
@@ -28,8 +31,8 @@
     position: absolute;
     transform: translateX(-60%);
     border: 3px solid #224ee0;
-    @media (max-width: 1199px) {
-      transform: translate(-10%, -55%);
+    @media (max-width: 1200px) {
+      transform: translate(-70%, 0%);
     }
     @media (max-width: 991px) {
       transform: translate(80%, -55%);
