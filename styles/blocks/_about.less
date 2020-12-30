@@ -9,6 +9,9 @@
     align-items: center;
     background: url("../images/holder.png") center center/cover no-repeat;
     border: 3px solid #ae3e76;
+    @media (max-width: 320px) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__welcome-img {

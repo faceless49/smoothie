@@ -9,6 +9,9 @@
   @media (max-width: 991px) {
     height: inherit;
   }
+  @media (max-width: 320px) {
+    overflow-x: scroll;
+  }
 
   &__descr {
     font-size: @base-font-size * 2.4rem;
@@ -43,6 +46,10 @@
     }
     @media (max-width: 575px) {
       padding: 1rem 0;
+    }
+    @media (max-width: 320px) {
+      flex: 0 0 50%;
+      overflow-x: scroll;
     }
     &--chocolate {
       background: url(../images/darkchocolate-holder.png) center center/cover

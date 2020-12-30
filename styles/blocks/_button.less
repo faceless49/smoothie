@@ -59,7 +59,9 @@
       padding: 0;
       font-size: 1.5rem;
     }
-
+    @media (max-width: 320px) {
+      margin: 1.5rem auto;
+    }
 
     &:after {
       content: "";
@@ -119,6 +121,7 @@
   }
   &--green-story {
     height: 6rem;
+    width: 30rem;
     display: block;
     margin: 0 auto;
     margin-top: 11rem;
@@ -127,8 +130,24 @@
     border-radius: @base-font-size * 3.5;
     background-color: @secondaryclr;
     color: #ffffff;
+    &:after {
+      content: "";
+      background-image: url(../icons/arrow.png);
+      background-repeat: no-repeat;
+      height: 1.6rem;
+      width: 3rem;
+      position: absolute;
+      right: 4rem;
+      bottom: 2.2rem;
+    }
+    &:hover:after {
+      padding-right: 15px;
+    }
     @media (max-width: 1200px) {
-      width: 20rem; 
+      width: 20rem;
+      &:after {
+        content: none;
+      } 
     }
     @media (max-width: 991px) {
       width: 20rem; 
