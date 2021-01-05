@@ -13,7 +13,7 @@
     margin-top: 11rem;
     text-align: left;
     padding: 15px 39px 30px 39px;
-    border-radius: @base-font-size * 3.5;
+    border-radius: 3.5rem;
     background-color: @secondaryclr;
     color: #ffffff;
     &:after {
@@ -24,10 +24,12 @@
       width: 3rem;
       position: absolute;
       right: 4rem;
-      bottom: 2.2rem;
+      bottom: 50%;
+      transform: translateY(50%);
+      transition: 0.3s;
     }
     &:hover:after {
-      padding-right: 15px;
+      right: 3rem;
     }
     @media (max-width: 1200px) {
       width: 25rem;
@@ -71,14 +73,16 @@
       width: 30px;
       position: absolute;
       right: 40px;
-      bottom: 20px;
+      bottom: 50%;
+      transform: translateY(50%);
       @media (max-width: 1200px) {
         display: none;
       }
     }
 
     &:hover:after {
-      padding-right: 15px;
+      transition: 0.3s;
+      right: 3rem;
     }
   }
 
@@ -109,14 +113,16 @@
       width: 30px;
       height: 16px;
       right: 30px;
-      bottom: 18px;
+      bottom: 50%;
+      transform: translateY(50%);
       @media (max-width: 991px) {
         display: none;
       }
     }
 
     &:hover:after {
-      padding-right: 10px;
+      transition: 0.3s;
+      right: 0.5rem;
     }
   }
   &--green-story {
@@ -138,10 +144,12 @@
       width: 3rem;
       position: absolute;
       right: 4rem;
-      bottom: 2.2rem;
+      bottom: 50%;
+      transform: translateY(50%);
     }
     &:hover:after {
-      padding-right: 15px;
+      transition: 0.3s;
+      right: 3rem;
     }
     @media (max-width: 1200px) {
       width: 20rem;
