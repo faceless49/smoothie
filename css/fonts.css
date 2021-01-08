@@ -32,6 +32,12 @@
   font-style: Italic;
 }
 @font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: Italic;
+}
+@font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-Medium.woff") format("woff");
   font-weight: 500;
