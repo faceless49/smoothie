@@ -3,29 +3,34 @@
 .feedback {
   min-height: 720px;
   padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
-  text-align: center;
   background: url(../images/sarah-holder.png) center center/cover no-repeat;
-  border: 3px solid red;
-  @media (max-width: 575px) {
-    padding-top: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  // border: 3px solid red;
+  @media (max-width: 971px) {
+    padding-top: 80px;
   }
   &:before {
     content: "Sarah A";
     position: absolute;
-    left: 10%;
-    top: 25%;
+    left: 15%;
+    top: 30%;
     color: #59230d;
     font-size: 20rem;
     font-weight: 800;
-    border: 3px solid red;
-    @media (max-width: 1200px) {
+    // border: 3px solid red;
+    
+    @media (max-width: 1199px) {
       font-size: 15rem;
       left: 15%;
-      top: 29%;
+      top: 25%;
+    }
+    @media (max-width: 991px) {
+      font-size: 11rem;
+      left: 15%;
+      top: 30%;
     }
     @media (max-width: 767px) {
       font-size: 7rem;
@@ -50,7 +55,10 @@
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    border: 3px solid #224ee0;
+    // border: 3px solid #224ee0;
+    @media (max-width: 971px) {
+      padding: 0 20px;
+    }
 
     @media (max-width: 575px) {
       margin-top: 0;
@@ -97,13 +105,19 @@
     font-size: 1.8rem;
     line-height: 45px;
     color: #f8b231;
-    border: 3px solid #224ee0;
+    // border: 3px solid #224ee0;
   }
 
   &__somequote-inner {
     width: 475px;
     margin-right: 60px;
-    border: 3px solid #224ee0;
+    text-align: center;
+    // border: 3px solid #224ee0;
+
+    @media (max-width: 991px) {
+      width: auto;
+      margin-right: 25px;
+    }
     @media (max-width: 767px) {
       width: auto;
       margin: 40px 15px 40px 15px;
@@ -112,12 +126,14 @@
 
   &__arrows {
     width: 30%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    margin-top: 80px;
+    @media (max-width: 991px) {
+      margin-top: 80px;
+    }
   }
   &__arrow--left {
     transform: rotate(180deg);
-    margin-bottom: 80px;
   }
 }

@@ -1,13 +1,16 @@
 // main: ./../main.less
 
 .instagram {
-  border: 3px solid red;
+  // border: 3px solid red;
 
   &__title-wrapper {
-    margin: 20rem 0 5rem 1.5rem;
+    margin: 200px 0 45px 1.5px;
     .flexcenter;
+    @media (max-width: 1199px) {
+      margin-top: 100px;
+    }
     @media (max-width: 575px) {
-      margin: 4rem 0 4rem 0;
+      margin: 40px 0 4px 0;
     }
   }
 
@@ -16,14 +19,16 @@
     font-size: @base-font-size * 2.4rem;
     font-weight: 800;
     color: #0aa566;
-    border: 3px solid red;
+
+    // border: 3px solid red;
   }
 
   &__cocktails-images {
     display: flex;
-    border: 3px solid red;
+    // border: 3px solid red;
     @media (max-width: 1261px) {
       overflow-x: scroll;
+      overflow-y: hidden;
     }
   }
 
@@ -48,7 +53,8 @@
   }
   &__image {
     position: relative;
-    object-fit: cover;
+    object-fit: contain;
+    height: 325px;
     @media (max-width: 575px) {
       height: 300px;
     }
