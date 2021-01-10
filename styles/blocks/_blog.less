@@ -30,6 +30,17 @@
     @media (max-width: 991px) {
       font-size: 2rem;
     }
+    @media (max-width: 767px) {
+      font-size: 1.8rem;
+    }
+    @media (max-width: 575px) {
+      text-align: center;
+    }
+  }
+  &__time {
+    @media (max-width: 575px) {
+      margin-left: 15px;
+    }
   }
   &__feedback {
     &:before {
@@ -46,6 +57,7 @@
     .feedback-wrapper {
       margin-left: 6rem;
       @media (max-width: 575px) {
+        margin-top: 20px;
         margin-left: 0;
       }
     }
@@ -61,7 +73,10 @@
       margin-left: 2rem;
     }
     @media (max-width: 575px) {
-      margin-left: 0;
+      text-align: center;
+      margin: 25px 10px;
+      font-size: 1.4rem;
+      line-height: 2.4;
     }
     &-more {
       position: relative;

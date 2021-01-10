@@ -46,10 +46,9 @@
     @media (max-width: 767px) {
       display: block;
       position: absolute;
-      right: 3rem;
-      top: 5rem;
-      transform: translateY(-50%);
-      width: 2.6rem;
+      right: 10%;
+      top: 6%;
+      width: 26px;
       z-index: 9999999999;
       &-item {
         display: block;
@@ -246,6 +245,7 @@
       width: 1.8rem;
       height: 1.8rem;
       position: absolute;
+      bottom: 15px;
       text-align: center;
       line-height: 1.8rem;
       border-radius: 100%;
@@ -258,6 +258,11 @@
     margin-right: 45px;
     @media (max-width: 1520px) {
       margin-right: 25px;
+    }
+    &:last-child {
+      @media (max-width: 575px) {
+        margin-right: 0;
+      }
     }
   }
 }
