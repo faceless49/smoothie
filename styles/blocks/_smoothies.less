@@ -15,11 +15,16 @@
     }
   }
   &__text {
-    max-width: 92rem;
+    max-width: 920px;
     margin: 5rem 0;
     font-size: @base-font-size * 1.8rem;
     font-weight: 400;
     border: 3px solid #224ee0;
+    @media (max-width: 767px) {
+      font-size: 1.4rem;
+      line-height: 1.4;
+      margin: 5rem 1.5rem;
+    }
   }
 
   &__title {
@@ -39,7 +44,7 @@
     @media (max-width: 767px) {
       grid-template-columns: repeat(auto-fit, 2, 100px);
     }
-    @media (max-width: 320px) {
+    @media (max-width: 360px) {
       grid-template-columns: repeat(2, 1fr);
     }
   }

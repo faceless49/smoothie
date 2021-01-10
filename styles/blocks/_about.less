@@ -25,6 +25,7 @@
     }
     @media (max-width: 575px) {
       width: 90%;
+      margin-top: 40px;
     }
   }
 
@@ -36,14 +37,13 @@
       font-size: 4rem;
     }
     @media (max-width: 767px) {
+      text-align: center;
       font-size: 2.5rem;
-    }
-    @media (max-width: 575px) {
-      font-size: 2rem;
     }
 
     &-grn {
-      font-size: @base-font-size * 5.5rem;
+      font-size: 5.5rem;
+      font-weight: 800;
       color: #cae941;
       position: relative;
       @media (max-width: 1200px) {
@@ -52,27 +52,26 @@
       @media (max-width: 767px) {
         font-size: 2.5rem;
       }
-      @media (max-width: 575px) {
-        font-size: 2rem;
-      }
 
       &:after {
         content: "";
         background-image: url(../icons/Line.svg);
         background-repeat: no-repeat;
         position: absolute;
-        width: 45rem;
-        height: 1rem;
-        top: 6rem;
-        right: -3rem;
+        width: 450px;
+        height: 10px;
+        top: 60px;
+        right: -30px;
         @media (max-width: 1200px) {
-          top: 4.5rem;
-          right: 0rem;
-          width: 30rem;
+          top: 45px;
+          right: 0;
+          width: 300px;
+          background-size: cover;
         }
         @media (max-width: 767px) {
+          height: 0.7rem;
           top: 2.5rem;
-          width: 19rem;
+          width: 20rem;
         }
       }
     }
@@ -80,10 +79,14 @@
 }
 
 .advantages {
+  display: flex;
+  flex-direction: column;
   max-width: 586px;
-  margin: 100px 0 95px 0;
-  margin-bottom: 95px;
+  margin: 100px 0;
   border: 3px solid #224ee0;
+  @media (max-width: 767px) {
+    margin: 100px 15px;
+  }
 
   &__list {
     margin-left: 2.5rem;
@@ -101,10 +104,9 @@
       font-size: 1.5rem;
       padding-left: 1rem;
     }
-    @media (max-width: 575px) {
-      font-size: 1.2rem;
+    @media (max-width: 767px) {
+      font-size: 1.4rem;
       padding-left: 0.5rem;
-      margin-top: 0.5rem;
     }
     &--strong {
       font-size: @base-font-size * 2.1rem;
@@ -112,8 +114,8 @@
       @media (max-width: 1200px) {
         font-size: 1.6rem;
       }
-      @media (max-width: 575px) {
-        font-size: 1.2rem;
+      @media (max-width: 767px) {
+        font-size: 1.4rem;
       }
     }
   }

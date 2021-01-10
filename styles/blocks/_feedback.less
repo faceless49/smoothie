@@ -28,22 +28,39 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 1;
+    z-index: 999999;
     color: #ffffff;
     border: 3px solid #224ee0;
+    
     @media (max-width: 575px) {
       margin-top: 0;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      align-items: center;
     }
+
   }
 
   &__title {
     @media (max-width: 991px) {
       font-size: 3rem;
     }
-    &:after {
+
+    &--upper-orange {
+      font-size: 3rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #f2612d;
+      @media (max-width: 1200px) {
+        font-size: 4rem;
+      }
+    }
+  }
+  &__quote {
+    font-size: 1.8rem;
+    line-height: @base-font-size * 3.5rem;
+    font-weight: 400;
+    &:before {
       content: "Sarah A";
       position: absolute;
       left: 50%;
@@ -65,20 +82,13 @@
         transform: translate(-50%, 140%);
       }
     }
-    &--upper-orange {
-      font-size: 3rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      color: #f2612d;
-      @media (max-width: 1200px) {
-        font-size: 4rem;
-      }
+    @media (max-width: 575px) {
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 1.4rem;
     }
-  }
-  &__quote {
-    font-size: 1.8rem;
-    line-height: @base-font-size * 3.5rem;
-    font-weight: 400;
   }
   &__quote-auth {
     display: block;

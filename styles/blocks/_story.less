@@ -3,7 +3,12 @@
 .story {
   .btn {
     margin: 60px 0 0 0;
+    @media (max-width: 768px) {
+      margin: 40px 0;
+      font-size: 2rem;
+    }
   }
+
   &-inner {
     padding: 120px 300px 160px 200px;
     display: flex;
@@ -14,13 +19,8 @@
       padding: 0;
     }
     @media (max-width: 991px) {
-      padding: 0;
+      padding-top: 40px;
       flex-direction: column;
-    }
-  }
-  &__title {
-    @media (max-width: 991px) {
-      font-size: 4rem;
     }
   }
 
@@ -53,8 +53,11 @@
     margin: 0;
     border: 3px solid #224ee0;
     width: 540px;
-    @media (max-width: 576px) {
+    @media (max-width: 767px) {
       width: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
   &__descr {
@@ -64,5 +67,12 @@
     font-size: @base-font-size * 1.8rem;
     line-height: 35px;
     border: 3px solid #224ee0;
+    @media (max-width: 767px) {
+      font-size: 1.4rem;
+      padding: 0;
+      margin: 40px 15px 0 15px;
+      line-height: 1.4;
+      text-align: center;
+    }
   }
 }
