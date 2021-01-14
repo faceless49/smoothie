@@ -1,0 +1,128 @@
+// main: ./../main.less
+
+.about {
+  &__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url("../images/holder.png") center center/cover no-repeat;
+
+    @media (max-width: 1300px) {
+      flex-direction: column;
+    }
+  }
+
+  &__welcome-img {
+    position: relative;
+    display: block;
+    z-index: 1;
+    transform: translateY(10%);
+
+    @media (max-width: 1200px) {
+      width: 55%;
+      margin: 0;
+      transform: translateY(5%);
+    }
+    @media (max-width: 575px) {
+      width: 90%;
+      margin-top: 40px;
+    }
+  }
+
+  &__title {
+    font-size: @base-font-size * 5.5rem;
+    color: #ffffff;
+
+    @media (max-width: 1200px) {
+      font-size: 4rem;
+    }
+    @media (max-width: 767px) {
+      text-align: center;
+      font-size: 3.5rem;
+    }
+
+    &-grn {
+      font-size: 5.5rem;
+      font-weight: 800;
+      color: #cae941;
+      position: relative;
+
+      @media (max-width: 1200px) {
+        font-size: 4rem;
+      }
+      @media (max-width: 767px) {
+        font-size: 3rem;
+      }
+
+      &:after {
+        content: "";
+        background-image: url(../icons/Line.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 450px;
+        height: 10px;
+        top: 60px;
+        right: -30px;
+        @media (max-width: 1200px) {
+          top: 45px;
+          right: -18px;
+          width: 350px;
+          background-size: cover;
+        }
+        @media (max-width: 767px) {
+          height: 10px;
+          top: 3.5rem;
+          width: 260px;
+        }
+      }
+    }
+  }
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  max-width: 586px;
+  margin: 100px 0;
+
+  @media (max-width: 767px) {
+    margin: 100px 15px;
+  }
+
+  &__list {
+    margin-left: 2.5rem;
+    font-weight: 400;
+    color: #ffffff;
+    list-style-image: url(../icons/1.svg);
+  }
+
+  &__item {
+    padding-left: 20px;
+    margin-top: 20px;
+    font-size: 2.1rem;
+
+    @media (max-width: 1200px) {
+      padding-left: 10px;
+    }
+    @media (max-width: 991px) {
+      font-size: 1.6rem;
+    }
+    @media (max-width: 767px) {
+      font-size: 1.4rem;
+      padding-left: 0.5rem;
+    }
+    &--strong {
+      font-size: @base-font-size * 2.1rem;
+      font-weight: 800;
+
+      @media (max-width: 991px) {
+        font-size: 1.6rem;
+      }
+      @media (max-width: 767px) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
