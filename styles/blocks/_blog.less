@@ -7,26 +7,29 @@
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
-    // border: 3px solid greenyellow;
   }
+
   &__cocktails-image {
     max-width: 120rem;
     margin-top: 5rem;
     display: flex;
     align-items: center;
+
     @media (max-width: 991px) {
       flex-direction: column;
     }
   }
+
   &__cocktailsforimage {
     width: 100%;
   }
+
   &__subtitle--upper-red {
     font-size: @base-font-size * 3rem;
     font-weight: 800;
     line-height: 40px;
     color: #f2612d;
-    // border: 3px solid green;
+
     @media (max-width: 991px) {
       font-size: 2.5rem;
     }
@@ -37,25 +40,29 @@
       text-align: center;
     }
   }
+
   &__time {
     @media (max-width: 575px) {
       margin-left: 15px;
     }
   }
+
   &__feedback {
     &:before {
       content: "";
-      width: 65rem;
-      height: 1.2rem;
+      width: 650px;
+      height: 12px;
       display: block;
       background-color: #f8ac38;
-      // border: 3px solid violet;
+
       @media (max-width: 1200px) {
         display: none;
       }
     }
+
     .feedback-wrapper {
-      margin-left: 6rem;
+      margin-left: 60px;
+
       @media (max-width: 971px) {
         margin-left: 0;
       }
@@ -65,13 +72,14 @@
       }
     }
   }
+
   &__descr {
     max-width: 475px;
     margin-left: 6.5rem;
     text-align: left;
     font-size: @base-font-size * 1.8rem;
     line-height: 2;
-    // border: 3px solid salmon;
+
     @media (max-width: 991px) {
       margin-left: 2rem;
     }
@@ -81,13 +89,16 @@
       font-size: 1.4rem;
       line-height: 2.4;
     }
+
     &-more {
       position: relative;
       font-weight: 800;
       font-size: 1.8rem;
+
       @media (max-width: 991px) {
         font-size: 1.4rem;
       }
+
       &:after {
         content: "";
         background-image: url(../images/smallarrow.png);
@@ -96,18 +107,20 @@
         width: 18px;
         right: -30px;
         top: 7px;
+
         @media (max-width: 1200px) {
           display: none;
         }
       }
     }
   }
+
   &__title {
     margin-top: 11.5rem;
     font-size: @base-font-size * 5rem;
     font-weight: 800;
-    padding-left: 36rem;
-    // border: 3px solid #224ee0;
+    padding-left: 13rem;
+
     @media (max-width: 1200px) {
       padding: 0;
     }
@@ -122,6 +135,5 @@
   &__time {
     font-size: @base-font-size * 1.6rem;
     line-height: 35px;
-    // border: 3px solid red;
   }
 }

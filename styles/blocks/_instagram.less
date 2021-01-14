@@ -1,11 +1,10 @@
 // main: ./../main.less
 
 .instagram {
-  // border: 3px solid red;
-
   &__title-wrapper {
     margin: 200px 0 45px 1.5px;
     .flexcenter;
+
     @media (max-width: 1199px) {
       margin-top: 100px;
     }
@@ -19,13 +18,12 @@
     font-size: @base-font-size * 2.4rem;
     font-weight: 800;
     color: #0aa566;
-
-    // border: 3px solid red;
   }
 
   &__cocktails-images {
     display: flex;
-    // border: 3px solid red;
+    position: relative;
+
     @media (max-width: 740px) {
       overflow-x: scroll;
       overflow-y: hidden;
@@ -34,17 +32,10 @@
 
   &__image-wrapper {
     flex: 0 1 20%;
-    // width: 100%;
-    // margin: 0;
-    // padding: 0 0 20% 0;
-    // // overflow: hidden;
-    // position: relative;
-    @media (max-width: 740px) {
-      flex: 0 0 70%;
-    }
+    position: relative;
     &:after {
       content: "";
-      background-image: url("../../icons/instagramwhite.svg");
+      background-image: url(../icons/instagramwhite.svg);
       background-repeat: no-repeat;
       position: absolute;
       height: 6rem;
@@ -57,12 +48,18 @@
         right: 15px;
       }
     }
+
+    @media (max-width: 740px) {
+      flex: 0 0 70%;
+    }
   }
   &__image {
+    height: 100%;
     width: 100%;
+    position: relative;
 
     @media (max-width: 740px) {
       overflow: scroll;
-    } 
+    }
   }
 }
