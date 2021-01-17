@@ -7,9 +7,6 @@
   @media (max-width: 991px) {
     height: inherit;
   }
-  @media (max-width: 768px) {
-    overflow: hidden;
-  }
   @media (max-width: 575px) {
     overflow-x: scroll;
   }
@@ -44,6 +41,10 @@
     flex: 0 1 25%;
     @media (max-width: 991px) {
       padding: 80px 0;
+    }
+    @media (max-width: 768px) {
+      overflow: scroll;
+      flex: 0 0 25%;
     }
     @media (max-width: 575px) {
       flex: 0 0 80%;
