@@ -8,6 +8,9 @@ window.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('header__hamburger--active');
         menu.classList.toggle('header__navigation--active');
+        menuItem.forEach((menuItem) => {
+        menuItem.classList.toggle('header__hamburger--active-item');
+        });
         lines.forEach((lines) => {
             lines.classList.toggle('header__hamburger--active-item');
         });
@@ -17,10 +20,30 @@ window.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('click', () => {
             hamburger.classList.toggle('header__hamburger--active');
             menu.classList.toggle('header__navigation--active');
+            lines.forEach((lines) => {
             lines.classList.toggle('header__hamburger--active-item');
+            })
         })
     })
 })
+
+let buyButtons = document.querySelectorAll('.btn--white')
+
+let cart_count = document.getElementById('cart_count')
+
+function addToCart() {
+    cart_count.innerText = Number(cart_count.innerText) + 1
+}
+
+// buyButtons[0].addEventListener
+
+for(let i = 0; i < buyButtons.length; i++) {
+    buyButtons[i].addEventListener('click', addToCart)
+}
+
+
+
+
 
 
 
