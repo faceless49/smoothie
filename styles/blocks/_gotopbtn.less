@@ -1,0 +1,26 @@
+//main: ./../main.less
+
+.gotop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: #f2662f;
+    border-radius: 5px;
+    border: none;
+    z-index: 99999999;
+        &:after {
+            content: "";
+            background-image: url(../icons/arrowwhite.svg);
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 30px;
+            height: 16px;
+            transform: rotate(-90deg);
+            right: 11px;
+            top: 16px;
+            
+        }
+    }
+
