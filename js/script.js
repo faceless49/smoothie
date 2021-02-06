@@ -1,4 +1,3 @@
-"use strict";
 
 // * ====== Hamburger active class toggle
 
@@ -68,6 +67,14 @@ for (let anchor of anchors) {
 let goTopBtn = document.querySelector('.gotop');
 
 
+goTopBtn.onclick = function() {
+  window.scrollTo(pageXOffset, 0);
+  // после scrollTo возникнет событие "scroll", так что стрелка автоматически скроется
+};
+
+window.addEventListener('scroll', function() {
+  goTopBtn.hidden = (pageYOffset < document.documentElement.clientHeight);
+});
 
 /* window.scroll(function(){
     if (window.scrollTop > 100) {
@@ -78,15 +85,6 @@ let goTopBtn = document.querySelector('.gotop');
 })
  */
 
-goTopBtn.onclick = function() {
-    window.scrollTo(pageXOffset, 0);
-    // после scrollTo возникнет событие "scroll", так что стрелка автоматически скроется
-  };
-
-  window.addEventListener('scroll', function() {
-    goTopBtn.hidden = (pageYOffset < document.documentElement.clientHeight);
-  });
-
 // document.onload = (function() {
 //     window.scroll(function() {
 //         if (window.scrollTop() > 1600) {
@@ -96,6 +94,10 @@ goTopBtn.onclick = function() {
 //         }
 //     });
 // })
+
+
+
+
 
 
 
